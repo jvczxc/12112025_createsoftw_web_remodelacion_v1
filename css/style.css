@@ -1,0 +1,786 @@
+/* Variables de Color */
+:root {
+    --corporate-color: #460809; /* Color Corporativo (Rojo Oscuro) */
+    --corporate-colore: #B11F19; /* Color Corporativo (Rojo Oscuro) */
+    --highlight-color: #FFDF20; /* Color de Resalte (Amarillo/Dorado) */
+    --text-color-light: #FFFFFF;
+    --border-color: #FFFFFF;
+}
+
+/* Base y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ==================================== */
+/* 1. Precarga y Esqueleto (Loading/Skeleton) */
+/* ==================================== */
+
+/* Barra de Precarga */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--corporate-color);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid var(--highlight-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo Esqueleto (Se aplica al cargar) */
+#main-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#main-content.loaded {
+    opacity: 1;
+}
+
+
+/* ==================================== */
+/* 2. Header y Navegación */
+/* ==================================== */
+
+header {
+    background-color: var(--corporate-color);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    order: -1; /* Mueve el logo a la izquierda (inicio) */
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    margin-right: 10px;
+	background-color:#ffffff;
+}
+
+.logo-text {
+    color: var(--text-color-light);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Links de Navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links > li > a, .nav-links .dropdown > a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-links > li > a:hover,
+.nav-links .dropdown:hover > a,
+.auth-link:hover {
+    color: var(--highlight-color);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--corporate-color);
+    list-style: none;
+    min-width: 220px;
+    z-index: 500;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    border-top: 3px solid var(--highlight-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    color: var(--text-color-light);
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #5a1416; /* Tono más claro del corporativo */
+    color: var(--highlight-color);
+}
+
+/* Toggle para Móvil */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color-light);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* ==================================== */
+/* 3. Secciones Comunes */
+/* ==================================== */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--corporate-color);
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* ==================================== */
+/* 4. Hero Section (Eslogan) */
+/* ==================================== */
+
+.hero-section {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: var(--text-color-light);
+    font-size: 2.5em;
+    max-width: 80%;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ==================================== */
+/* 5. Domain Search Section */
+/* ==================================== */
+
+.domain-search-section {
+    background-color: var(--corporate-color);
+    color: var(--text-color-light);
+}
+
+.domain-search-section h2 {
+    color: var(--highlight-color);
+}
+
+.domain-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.domain-form input[type="text"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: none;
+    font-size: 1em;
+}
+
+.domain-form button {
+    background-color: var(--highlight-color);
+    color: #333;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.domain-form button:hover {
+    background-color: #ffd700;
+}
+
+.domain-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.domain-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.domain-options input[type="radio"] {
+    /* Ocultar el radio nativo y usar CSS para estilos */
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--text-color-light);
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.domain-options input[type="radio"]:checked:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--highlight-color);
+}
+
+/* ==================================== */
+/* 6. Servicios Destacados (Tabla) */
+/* ==================================== */
+
+.services-table-section {
+    background-color: var(--text-color-light);
+}
+
+.service-table-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: var(--corporate-color);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.service-card img {
+    width: 100%;
+    max-width: 200px;
+   object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==================================== */
+/* 7. Testimonios */
+/* ==================================== */
+
+.testimonials-section {
+    background-color: #f0f0f0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--text-color-light);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-card .rating {
+    color: var(--highlight-color);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.testimonial-card p {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-card cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: var(--corporate-color);
+}
+
+
+/* ==================================== */
+/* 8. Contacto (Formulario) */
+/* ==================================== */
+
+.contact-section {
+    background-color: var(--text-color-light);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--corporate-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: var(--corporate-color);
+    color: var(--text-color-light);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5a1416;
+}
+
+/* ==================================== */
+/* 9. Footer */
+/* ==================================== */
+
+footer {
+    background-color: #460809;
+    color: #ccc;
+    padding: 40px 20px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    color: var(--highlight-color);
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li, .footer-column p {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--highlight-color);
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+/* ==================================== */
+/* 10. Botones Flotantes */
+/* ==================================== */
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1500;
+}
+
+.floating-buttons button, .floating-buttons a {
+    background-color: var(--corporate-colore);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+#whatsapp-button {
+    background-color: #25D366; /* Color de WhatsApp */
+}
+
+.floating-buttons button:hover, .floating-buttons a:hover {
+    transform: scale(1.1);
+}
+
+#scroll-to-top {
+    display: none; /* Se mostrará con JS */
+}
+
+/* ==================================== */
+/* 11. Chat Modal */
+/* ==================================== */
+
+.chat-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: var(--text-color-light);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.chat-modal.open {
+    display: flex;
+}
+
+.chat-header {
+    background-color: var(--corporate-color);
+    color: var(--text-color-light);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h4 {
+    margin: 0;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: var(--text-color-light);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.received {
+    background-color: #eee;
+    align-self: flex-start;
+    color: #333;
+}
+
+.message.sent {
+    background-color: var(--highlight-color);
+    align-self: flex-end;
+    color: var(--corporate-color);
+}
+
+.chat-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+#visitor-message {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#send-message {
+    background-color: var(--corporate-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ==================================== */
+/* 12. Media Queries (Responsividad) */
+/* ==================================== */
+
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    /* Navegación Móvil */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Ajustar según la altura del header */
+        left: 0;
+        background-color: var(--corporate-color);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-menu {
+        position: static;
+        min-width: unset;
+        transform: none;
+        border-top: none;
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px; /* Suficiente para expandirse */
+    }
+
+    /* Otras secciones */
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .service-table-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .hero-section img {
+        height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .domain-form input[type="text"],
+    .domain-form button {
+        font-size: 0.9em;
+    }
+    
+    .domain-form {
+        gap: 15px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .domain-form button {
+        width: 100%;
+    }
+
+    .service-table-container {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-modal {
+        width: 90%;
+        right: 5%;
+        bottom: 70px;
+    }
+    
+    .floating-buttons {
+        gap: 8px;
+    }
+    
+    .floating-buttons button, .floating-buttons a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+    }
+}
