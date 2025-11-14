@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Herramientas Web Interactivas</title>
+    <style>
+        /* Estilos CSS */
+        .container {
+            width: 100%;
+            height: 300px; /* Alto solicitado */
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            user-select: none; /* Evita la selección de texto */
+        }
+        .color-picker-section {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .color-display {
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .color-info {
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+        }
+        /* La generación de 500 tonos se simula con JS, aquí solo se prepara el contenedor */
+        .color-grid {
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px; /* Tamaño del recuadro de colores */
+            overflow: hidden; /* Para simular un gran recuadro */
+            border: 1px solid #ccc;
+        }
+        .color-swatch {
+            width: 10px; /* Tamaño muy pequeño para simular muchos tonos */
+            height: 10px;
+            cursor: pointer;
+        }
+        .material-icons-container {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+        .icon-example {
+            font-size: 24px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="container" id="pixel-meter">
+        <h2>Medidor de Píxeles en Tiempo Real</h2>
+        <p>Mueve el ratón dentro de este recuadro.</p>
+        <input type="text" id="dimensions-input" value="Alto: 300px | Ancho: 100%" readonly style="width: 80%; text-align: center; padding: 10px; font-size: 16px;">
+    </div>
+
+    <div class="color-picker-section">
+        <h2>🎨 Selector de Color (500+ Tonos Simulados)</h2>
+        <div class="color-display" id="selected-color-box"></div>
+        <div class="color-info">
+            <p>Color Seleccionado: <strong id="color-code">#FFFFFF</strong> (Haz click en un tono)</p>
+            <p>Formatos:</p>
+            <ul>
+                <li>HEX: <span id="hex-code">#FFFFFF</span></li>
+                <li>RGB: <span id="rgb-code">rgb(255, 255, 255)</span></li>
+                <li>HSL: <span id="hsl-code">hsl(0, 0%, 100%)</span></li>
+            </ul>
+        </div>
+        <div class="color-grid" id="color-grid">
+            </div>
+    </div>
+
+    <div class="material-icons-container">
+        <h2>✨ Inserción de Íconos de Google Fonts (Material Symbols)</h2>
+        <p>A continuación, la explicación de cómo insertarlos y un ejemplo:</p>
+        <span class="material-symbols-outlined icon-example">home</span>
+        <span class="material-symbols-outlined icon-example" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;">favorite</span>
+        <span class="material-symbols-outlined icon-example">settings</span>
+        <p><strong>Nota:</strong> Una lista de 2000 íconos no se puede mostrar aquí, pero con la inserción correcta puedes usar cualquiera.</p>
+    </div>
+
+    <script>
+        // --- 1. Lógica del Medidor de Píxeles en Tiempo Real ---
+        const pixelMeter = document.getElementById('pixel-meter');
+        const dimensionsInput = document.getElementById('dimensions-input');
+
+        pixelMeter.addEventListener('mousemove', function(e) {
+            // e.offsetX y e.offsetY dan la posición del mouse relativa al elemento
+            const currentWidth = e.offsetX;
+            const currentHeight = e.offsetY;
+            dimensionsInput.value = `Posición del Mouse (width ancho X: ${currentWidth}px | height alto Y: ${currentHeight}px)`;
+        });
+
+        pixelMeter.addEventListener('mouseout', function() {
+            // Muestra las dimensiones originales cuando el mouse sale
+            dimensionsInput.value = 'height = Alto: 300px | width = Ancho: 100%';
+        });
+
+        // --- 2. Lógica del Selector de Color (Generación y Conversión) ---
+        const colorGrid = document.getElementById('color-grid');
+        const selectedColorBox = document.getElementById('selected-color-box');
+        const hexCodeSpan = document.getElementById('hex-code');
+        const rgbCodeSpan = document.getElementById('rgb-code');
+        const hslCodeSpan = document.getElementById('hsl-code');
+        const colorCodeP = document.getElementById('color-code');
+
+        // Función para convertir RGB a HEX
+        function rgbToHex(r, g, b) {
+            return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+        }
+
+        // Función para convertir RGB a HSL (simplificado)
+        function rgbToHsl(r, g, b) {
+            r /= 255; g /= 255; b /= 255;
+            let max = Math.max(r, g, b), min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max == min) {
+                h = s = 0; // Grises
+            } else {
+                let d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                    case g: h = (b - r) / d + 2; break;
+                    case b: h = (r - g) / d + 4; break;
+                }
+                h /= 6;
+            }
+            return `hsl(${Math.round(h * 360)}, ${Math.round(s * 100)}%, ${Math.round(l * 100)}%)`;
+        }
+
+        // Generar aproximadamente 500 tonos (simulado con una variación de rojo, verde y azul)
+        const numColors = 500;
+        for (let i = 0; i < numColors; i++) {
+            const swatch = document.createElement('div');
+            swatch.classList.add('color-swatch');
+
+            // Generación de colores semi-aleatoria para tener variedad
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            const rgbString = `rgb(${r}, ${g}, ${b})`;
+            
+            swatch.style.backgroundColor = rgbString;
+            
+            swatch.addEventListener('click', function() {
+                const hex = rgbToHex(r, g, b);
+                const hsl = rgbToHsl(r, g, b);
+
+                selectedColorBox.style.backgroundColor = rgbString;
+                colorCodeP.textContent = `Color Seleccionado: ${hex}`;
+                hexCodeSpan.textContent = hex;
+                rgbCodeSpan.textContent = rgbString;
+                hslCodeSpan.textContent = hsl;
+            });
+            colorGrid.appendChild(swatch);
+        }
+    </script>
+</body>
+</html>
