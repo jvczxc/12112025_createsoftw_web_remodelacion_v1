@@ -8,52 +8,27 @@
             </div>
         </section>
 
-        <section class="domain-search-section">
-            <h2><?= const_0011 ?></h2>
-            <form class="domain-form">
-                <div class="input-group">
-                    <input type="text" name="domain_requi" placeholder="<?= const_0012 ?>" required>
-                    <button type="submit" name="botun_requi"><?= const_0013 ?></button>
-                </div>
-                
-                <div class="domain-options">
-                    <label>
-                        <input type="radio" name="domain_type" value=".com" checked> <?= const_0014 ?>
-                    </label>
-                    <label>
-                        <input type="radio" name="domain_type" value=".net"> <?= const_0015 ?>
-                    </label>
-                    <label>
-                        <input type="radio" name="domain_type" value=".org"> <?= const_0016 ?>
-                    </label>
-                    <label>
-                        <input type="radio" name="domain_type" value=".io"> <?= const_0017 ?>
-                    </label>
-                    <label>
-                        <input type="radio" name="domain_type" value=".dev"> <?= const_0018 ?>
-                    </label>
-                </div>
-            </form>
-        </section>
+            <?php require_once 'view/dominios/index.php'; ?>
+
 
         <section class="services-table-section">
 			<h1><?= const_0019 ?></h1>
             <div class="service-table-container">
                 <div class="service-card">
                     <h3><?= const_0006 ?></h3>
-                    <img src="view/img/logo/placeholder_diseno.png" alt="Diseños Gráficos" title="Desarrollo de webs, video juegos, cursos y mas visitanos">
+                    <img src="view/img/logo/placeholder_diseno.png" alt="Diseños Gráficos" title="<?= const_0110 ?>">
                 </div>
                 <div class="service-card">
                     <h3><?= const_0007 ?></h3>
-                    <img src="view/img/logo/placeholder_cursos.png" alt="Cursos" title="Desarrollo de webs, video juegos, cursos y mas visitanos">
+                    <img src="view/img/logo/placeholder_cursos.png" alt="Cursos" title="<?= const_0111 ?>">
                 </div>
                 <div class="service-card">
                     <h3><?= const_0008 ?></h3>
-                    <img src="view/img/logo/placeholder_desarrollo.png" alt="Desarrollos Webs" title="Desarrollo de webs, video juegos, cursos y mas visitanos">
+                    <img src="view/img/logo/placeholder_desarrollo.png" alt="Desarrollos Webs" title="<?= const_0112 ?>">
                 </div>
                 <div class="service-card">
                     <h3><?= const_0009 ?></h3>
-                    <img src="view/img/logo/placeholder_shaiya.png" alt="Shaiya" title="Desarrollo de webs, video juegos, cursos y mas visitanos">
+                    <img src="view/img/logo/placeholder_shaiya.png" alt="Shaiya" title="<?= const_0113 ?>">
                 </div>
             </div>
         </section>
@@ -65,46 +40,46 @@
                     <div class="rating">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"El mejor curso de desarrollo web que he tomado. ¡Totalmente recomendado!"</p>
-                    <cite>- **Alexa_Dev** (Estudiante de Programación)</cite>
+                    <p>"<?= const_0108 ?>"</p>
+                    <cite>- **Alexa_Dev** (<?= const_0109 ?>)</cite>
                 </div>
                 <div class="testimonial-card">
                     <div class="rating">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"Nuestro servidor VPS para Shaiya funciona sin problemas. Excelente soporte técnico."</p>
-                    <cite>- **GamerPro21** (Administrador de Servidor)</cite>
+                    <p>"<?= const_0107 ?>"</p>
+                    <cite>- **GamerPro21** (<?= const_0106 ?>)</cite>
                 </div>
                 <div class="testimonial-card">
                     <div class="rating">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"El diseño gráfico para mi logo fue rápido y superó mis expectativas. ¡Cinco estrellas!"</p>
-                    <cite>- **Javier M.** (Emprendedor)</cite>
+                    <p>"<?= const_0100 ?>"</p>
+                    <cite>- **Javier M.** (<?= const_0105 ?>)</cite>
                 </div>
                 <div class="testimonial-card">
                     <div class="rating">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p>"Contratamos el desarrollo de nuestra web y el resultado fue profesional y muy responsivo."</p>
-                    <cite>- **Laura G.** (Gerente de Proyecto)</cite>
+                    <p>"<?= const_0098 ?>"</p>
+                    <cite>- **Laura G.** (<?= const_0099 ?>)</cite>
                 </div>
             </div>
         </section>
 
         <section class="contact-section">
-            <h2>Contáctanos y Comienza tu Proyecto</h2>
+            <h2><?= const_0097 ?></h2>
             <form class="contact-form">
-                <label for="fullname">Nombre Completo:</label>
+                <label for="fullname"><?= const_0101 ?></label>
                 <input type="text" id="fullname" name="fullname" required>
                 
-                <label for="email">Correo Electrónico:</label>
+                <label for="email"><?= const_0102 ?></label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="textdetails">Detalles de tu Solicitud:</label>
+                <label for="textdetails"><?= const_0103 ?></label>
                 <textarea id="textdetails" name="textdetails" rows="5" required></textarea>
                 
-                <button type="submit">Enviar Mensaje</button>
+                <button type="submit"><?= const_0104 ?></button>
             </form>
         </section>
 

@@ -11,24 +11,24 @@
                 </div>
                 <div class="footer-column">
                     <h4><?= const_0046 ?></h4>
-                    <p><i class="fas fa-phone"></i><?= const_0046 ?> Teléfono 1: +584169256098</p>
-                    <p><i class="fas fa-phone"></i> Teléfono 2: +584264188098</p>
-                    <p><i class="fas fa-envelope"></i> Email: info@createsoftw.com</p>
+                    <p><i class="fas fa-phone"></i><?= const_0114 ?> <?= telefono_empresa_1 ?></p>
+                    <p><i class="fas fa-phone"></i> <?= const_0115 ?> <?= telefono_empresa_2 ?></p>
+                    <p><i class="fas fa-envelope"></i> <?= const_0116 ?> <?= email_empresa ?></p>
                 </div>
                 <div class="footer-column">
-                    <h4>Dirección y Redes</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Dirección: [Caracas, Venezuela]</p>
+                    <h4><?= const_0117 ?></h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <?= const_0118 ?></p>
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <p class="work-link"><a href="#">Trabaja con Nosotros</a></p>
+                    <p class="work-link"><a href="#"><?= const_0119 ?></a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2025 Createsoftw. Todos los derechos reservados.
+                <p>&copy; <?= date('Y') ?> Createsoftw. <?= const_0120 ?></p>
             </div>
         </footer>
 
@@ -54,6 +54,8 @@
             </div>
         </div>
 
-    </div> <script src="view/js/script.js"></script>
+    </div> 
+    <script src="view/js/script.js"></script>
+    <script src="view/js/executes.js"></script>
 </body>
 </html>

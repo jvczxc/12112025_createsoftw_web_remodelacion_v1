@@ -7,20 +7,23 @@
     <link rel="icon" href="view/img/logo/logo.png" type="image/png">
     <link rel="stylesheet" href="view/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="view/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="view/js/jquery.min.js"></script>
 </head>
 <body>
 <!-- reemplazar el texto quue conincidan con las definiciones const del archivo config.php por las constatntes -->
-    <div id="loading-overlay">
+<?php if(empty($_GET['w']) || $_GET['w'] == 'home'): ?>
+<div id="loading-overlay">
         <div class="loader"></div>
         <p><?= const_0022 ?></p>
     </div>
-
+<?php endif; ?>
     <div id="main-content" class="skeleton">
 
         <header>
             <nav class="nav-container">
                 <div class="logo-container">
-                    <img src="view/img/logo/logo.png" alt="Logo Createsoftw" title="Desarrollo de webs, video juegos, cursos y mas visitanos" class="logo-img">
+                    <img src="view/img/logo/logo.png" alt="Logo Createsoftw" title="<?= const_0121 ?>" class="logo-img">
                     <span class="logo-text"><?= const_0057 ?></span>
                 </div>
                 
@@ -196,8 +199,8 @@
                         </ul>
                     </li>
 
-                    <li><a href="#login" class="auth-link">Iniciar sesión</a></li>
-                    <li><a href="#register" class="auth-link">Registrarse</a></li>
+                    <li><a href="#login" class="auth-link"><?= const_0095 ?></a></li>
+                    <li><a href="#register" class="auth-link"><?= const_0096 ?></a></li>
                 </ul>
                 
                 <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
