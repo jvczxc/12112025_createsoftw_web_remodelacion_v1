@@ -1,5 +1,14 @@
  # raiz main solo from End de sitio web
- 
+ Uso de colores ROOT
+	:root {
+		--corporate-color: #460809; /* Color Corporativo (Rojo Oscuro) */
+		--corporate-colore: #B11F19; /* Color Corporativo (Rojo Oscuro) */
+		--highlight-color: #FFDF20; /* Color de Resalte (Amarillo/Dorado) */
+		--text-color-light: #FFFFFF;
+		--border-color: #FFFFFF;
+	}
+
+
  # 12112025 remodelacion web Maqueteando index.php finalizado
 
 	 * Lenguaje(Idioma paises) ira en asset/inc/bloque00
@@ -7,7 +16,7 @@
 	 * Conexiones Mysqli y Email ira dentro de asset/inc/requerido
 	 * Panel Administrativo ira en  admin/
 	 * Area cliente ira en  users/
-	 * 
+	  
 	 
 	 
  # Division de bloques y para que es cada bloque aqui

@@ -12,7 +12,10 @@
 </head>
 <body>
 <!-- reemplazar el texto quue conincidan con las definiciones const del archivo config.php por las constatntes -->
-<?php if(empty($_GET['w']) || $_GET['w'] == 'home'): ?>
+<?php if(isset($_SESSION['loader']) AND $_SESSION['loader'] == "ON" ): 
+$_SESSION['loader'] = "OFF";
+?>
+
 <div id="loading-overlay">
         <div class="loader"></div>
         <p><?= const_0022 ?></p>
@@ -33,9 +36,9 @@
                     <li class="dropdown">
                         <a href="#"><?= const_0002 ?> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item"><?= const_0023 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0024 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0025 ?></a></li>
+                            <li><a href="index.php?w=vps_pre_armado&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0023 ?></a></li>
+                            <li><a href="index.php?w=server_dedicado&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0024 ?></a></li>
+                            <li><a href="index.php?w=dominio_y_hosting&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0025 ?></a></li>
                         </ul>
                     </li>
                     
@@ -199,8 +202,8 @@
                         </ul>
                     </li>
 
-                    <li><a href="#login" class="auth-link"><?= const_0095 ?></a></li>
-                    <li><a href="#register" class="auth-link"><?= const_0096 ?></a></li>
+                    <li><a href="http://clientes.createsoftw.com" class="auth-link" target="_blank"><?= const_0095 ?></a></li>
+                    <li><a href="https://clientes.createsoftw.com/public/index.php?r=register" class="auth-link" target="_blank"><?= const_0096 ?></a></li>
                 </ul>
                 
                 <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
