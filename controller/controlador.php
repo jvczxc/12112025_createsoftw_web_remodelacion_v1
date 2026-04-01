@@ -14,5 +14,6 @@ class ModeloControlador{
     static function server_dedicado(){          require_once 'view/server_dedicado.php';    }
     static function dominio_y_hosting(){        require_once 'view/dominio_y_hosting.php';    }
     static function tyc(){                      require_once 'view/tyc.php';    }
+    static function construcion(){              require_once 'view/construcion.php';    }
 
 }

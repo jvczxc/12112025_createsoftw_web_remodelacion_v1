@@ -14,6 +14,8 @@ require_once('config.php');
             ModeloControlador::dominio_y_hosting(); /* Venta de dominios y hosting (RESELLER) */
         elseif(isset($_GET['w']) and $_GET['w'] === 'tyc'):
             ModeloControlador::tyc(); /* Terminos y condiciones */
+        elseif(isset($_GET['w']) and $_GET['w'] === 'construcion'):
+            ModeloControlador::construcion(); /* Web en construcion */
         else:
             ModeloControlador::index();/* Pagina principal Sin envio de datos back End */
         endif;

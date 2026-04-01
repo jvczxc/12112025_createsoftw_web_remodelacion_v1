@@ -39,43 +39,45 @@ $_SESSION['loader'] = "OFF";
                             <li><a href="index.php?w=vps_pre_armado&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0023 ?></a></li>
                             <li><a href="index.php?w=server_dedicado&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0024 ?></a></li>
                             <li><a href="index.php?w=dominio_y_hosting&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0025 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0025a ?></a></li>
                         </ul>
                     </li>
                     
                     <li class="dropdown">
                         <a href="#"><?= const_0058 ?> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item"><?= const_0026 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0027 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0028 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0029 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0030 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0031 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0026a ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0026 ?></a></li>
+                            <li><a href="index.php?w=servidores_dedicados&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0027 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0028 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0029 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0030 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0031 ?></a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#"><?= const_0059 ?> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item"><?= const_0032 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0033 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0034 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0032 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0033 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0034 ?></a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#"><?= const_0060 ?> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item"><?= const_0035 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0036 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0037 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0038 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0039 ?></a></li>
-                            <li><a href="#" class="dropdown-item"><?= const_0040 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0035 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0036 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0037 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0038 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0039 ?></a></li>
+                            <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0040 ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#"><?= const_0047 ?> <i class="fas fa-caret-down"></i></a>
+                        <a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>"><?= const_0047 ?> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                     <?php
                     $index = basename($_SERVER['PHP_SELF']);

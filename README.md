@@ -14,10 +14,7 @@
 	 * Lenguaje(Idioma paises) ira en asset/inc/bloque00
 	 * Modelo de negocio ira dentro de asset/inc/bloque##
 	 * Conexiones Mysqli y Email ira dentro de asset/inc/requerido
-	 * Panel Administrativo ira en  admin/
-	 * Area cliente ira en  users/
-	  
-	 
+		 
 	 
  # Division de bloques y para que es cada bloque aqui
  
