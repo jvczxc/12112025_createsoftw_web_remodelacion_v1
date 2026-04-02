@@ -111,7 +111,7 @@
     <div class="pricing-container">
         <div class="pricing-card">
             <h2>Servidor dedicado Basico</h2>
-            <div class="price">180 USD</div>
+            <div class="price">180 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Memoria: hasta 576 GB</li>
                 <li>Discos de almacenamiento SSD NVMe y HDD SAS Soft RAID</li>
@@ -127,7 +127,7 @@
 
         <div class="pricing-card">
             <h2>Servidor dedicado Emprendedor</h2>
-            <div class="price">740 USD</div>
+            <div class="price">740 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Memoria: hasta 1,5 TB</li>
                 <li>SLA: 99,99%</li>
@@ -144,7 +144,7 @@
 
         <div class="pricing-card">
             <h2>Servidor Empresario Master Full</h2>
-            <div class="price">1900 USD</div>
+            <div class="price">1900 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Memoria: hasta 2 TB</li>
                 <li>SLA: 99,99 %</li>

@@ -116,7 +116,8 @@
         
         <div class="pricing-card">
             <h2>hosting basico</h2>
-            <div class="price">3,96 USD</div>
+            <div class="price">3,96 USD<font class="fontprice">/m</font></div>
+            <div class="price">40,39 USD<font class="fontprice">/anual 15% ahorro</font></div>
             <ul class="services-list">
                 <li>1 GB RAM / 1 CPU</li>
                 <li>10 sitios web</li>
@@ -135,7 +136,7 @@
 
         <div class="pricing-card">
             <h2>Cloud Profesional</h2>
-            <div class="price">8 USD</div>
+            <div class="price">8 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>2 GB RAM / 2 CPU</li>
                 <li>Sitio Web ilimitado</li>
@@ -154,7 +155,7 @@
 
         <div class="pricing-card">
             <h2>Cloud Elite</h2>
-            <div class="price">17 USD</div>
+            <div class="price">17 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>4 GB RAM / 4 CPU</li>
                 <li>Sitio Web ilimitado</li>

@@ -1076,6 +1076,7 @@ case "en":
     define("const_0025","const_0025");
     define("const_0025a","const_0025a");
     define("const_0026","const_0026");
+    define("const_0026a","const_0026a");
     define("const_0027","const_0027");
     define("const_0028","const_0028");
     define("const_0029","const_0029");

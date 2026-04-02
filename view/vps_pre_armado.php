@@ -111,7 +111,7 @@
     <div class="pricing-container">
         <div class="pricing-card">
             <h2>Pack Básico</h2>
-            <div class="price">25 USD</div>
+            <div class="price">25 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>1. Panel básico</li>
                 <li>2. Server Pre-instalado listo para editar y testear</li>
@@ -138,7 +138,7 @@
 
         <div class="pricing-card">
             <h2>Pack Emprendedor</h2>
-            <div class="price">60 USD</div>
+            <div class="price">60 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>1. Panel básico + Staff GS y GMs</li>
                 <li>2. Server Pre-instalado listo para editar</li>
@@ -168,7 +168,7 @@
 
         <div class="pricing-card">
             <h2>Pack Empresario</h2>
-            <div class="price">80 USD</div>
+            <div class="price">80 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>1. Panel básico + Staff GS y GMs</li>
                 <li>2. Server Pre-instalado listo</li>
