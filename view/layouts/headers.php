@@ -39,10 +39,12 @@ $_SESSION['loader'] = "OFF";
 
         <header>
             <nav class="nav-container">
+                <a href="index.php?w=index&i=<?php echo $_SESSION['i']; ?>">
                 <div class="logo-container">
-                    <img src="view/img/logo/logo.png" alt="Logo Createsoftw" title="<?= const_0121 ?>" class="logo-img">
-                    <span class="logo-text"><?= const_0057 ?></span>
-                </div>
+                        <img src="view/img/logo/logo.png" alt="Logo Createsoftw" title="<?= const_0121 ?>" class="logo-img">
+                        <span class="logo-text"><?= const_0057 ?></span>
+                    </div>
+                </a>
                 
                 <ul class="nav-links">
                     <li><a href="index.php?w=index&i=<?php echo $_SESSION['i']; ?>"><?= const_0001 ?></a></li>
