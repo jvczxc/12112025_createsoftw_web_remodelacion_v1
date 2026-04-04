@@ -1,4 +1,14 @@
-<?php require_once 'view/layouts/headers.php'; ?>
+<?php
+require_once 'view/layouts/headers.php'; 
+$dolar1 = $dato3[0]['price'];
+$dolar2 = $dato3[1]['price'];
+$dolar3 = $dato3[2]['price'];
+$dolar4 = $dato3[3]['price'];
+$dolar1 = str_replace('.00', '', $dolar1);
+$dolar2 = str_replace('.00', '', $dolar2);
+$dolar3 = str_replace('.00', '', $dolar3);
+$dolar4 = str_replace('.00', '', $dolar3);
+?>
 <style>
         :root {
             --corporate-color: #460809; /* [cite: 1, 15] */
@@ -118,7 +128,7 @@
         
         <div class="pricing-card">
             <h2>basico</h2>
-            <div class="price">3,96 USD<font class="fontprice">/m</font></div>
+            <div class="price"><?= $dolar1 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>1 GB RAM / 1 CPU</li>
                 <li>10 sitios web</li>
@@ -132,7 +142,7 @@
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="3,96">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>">Pagar Ahora</button> 
         </div>
 
         <div class="pricing-card">
