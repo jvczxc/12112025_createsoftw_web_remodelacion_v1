@@ -11,17 +11,27 @@
 
  # Division de bloques y para que es cada bloque aqui
  
- # PROYECTOS BY CREATESOFTW
+ # PROYECTOS BY CREATESOFTW ❌ ✅
 
 	1- Desarrollar web CREATESOFTW
 	2- Desarrollos de Videos CLASES (Esto tardara) lo haremos Brayan y mi presona
 	3- Desarrollar web Coordinador de Estudios (2025 Control de Estudios, Evaluacion) esta se usara para dar planes de evaluacion a los cursantes
 	4- Desarrollar web Tynder2
-	5- Desarrollar web Markeplace FACEBOOK
-	6- Desarrollar web TOP INMUEBLES
-	7- Desarrollar web ALQUILERES DE BARCOS Y VEHICULOS
-	8- Desarrollar web Shaiya Edition (2010 Clasic)
-
+	5- Desarrollar web Markeplace Pro
+	6- control estudios(Sale solita del punto 3)
+	7- playas
+	8- Desarrollar web ALQUILERES DE BARCOS
+	8- Desarrollar web VEHICULOS
+	9- Hoteleria
+	✅10- Desarrollar web TOP INMUEBLES
+	11- Desarrollar web Shaiya Edition (2010 Clasic)
+	12- Desarrollar web ShaiyaLovers (2026 Premiun)
+	13- APK Aprende a leer
+	14- APK Matematicas
+	15- APK sopa de Letras
+	16- APK laberintos
+		PENDIENTE 
+			Como generar dinero con las APKs SON DEMASIADO UTILES!!!
 	
 # Tareas Pendientes
 	1- que la web pueda cambiar los textos desde el panel Admin
