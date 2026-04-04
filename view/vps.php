@@ -58,7 +58,7 @@
             list-style: none;
             padding: 0;
             margin: 20px 0;
-            height: 800px;
+            height: 300px;
             overflow-y: auto;
             border-bottom: 1px solid var(--corporate-colore);
         }
@@ -100,7 +100,7 @@
         }
 
         .terms-content {
-            height: 400px;
+            height: 300px;
             overflow-y: scroll;
             border: 1px solid #ddd;
             padding: 15px;
@@ -108,18 +108,12 @@
         }
     </style>
     <h1 class="h1">Elije como quieres tu VPS prearmado de Shaiya y haz realidad tu emprendimiento.</h1>
+    <h1 class="h1">Tipos de VPS.</h1>
     <div class="pricing-container">
         <div class="pricing-card">
             <h2>Básico</h2>
             <div class="price">25 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico</li>
-                <li>Server Pre-instalado listo para editar y testear</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>Subdominio para Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
                 <li>Dirección de IP dedicada</li>
                 <li>2 Núcleos x 3.0 Ghz</li>
                 <li>Disco HDD 120 GB</li>
@@ -128,7 +122,6 @@
                 <li>Localización: Data-Center Canadá</li>
                 <li>WINDOWS 2016 R2</li>
                 <li>Mitigación DDOS hasta 200MBs</li>
-                <li>Hasta 25 PJs ON sin lag</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
@@ -139,15 +132,6 @@
             <h2>Emprendedor</h2>
             <div class="price">60 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico + Staff GS y GMs</li>
-                <li>Server Pre-instalado listo para editar</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>tuservershaiya.com Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
-                <li>Dirección de IP dedicada</li>
-                <li>Sistema de Notices Automático</li>
                 <li>2 Núcleos x 3.0 Ghz</li>
                 <li>Disco HDD 720 GB</li>
                 <li>RAM 12 GB</li>
@@ -156,8 +140,6 @@
                 <li>WINDOWS 2016 R2</li>
                 <li>Mitigación DDOS hasta 500MBs</li>
                 <li>Hasta 80 PJs ON sin lag</li>
-                <li>Escala de premios</li>
-                <li>Res web de PJ</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
@@ -168,15 +150,6 @@
             <h2>Empresario</h2>
             <div class="price">80 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico + Staff GS y GMs</li>
-                <li>Server Pre-instalado listo</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>tuservershaiya.com Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
-                <li>Dirección de IP dedicada</li>
-                <li>Sistema de Notices Automático</li>
                 <li>2 Núcleos x 3.0 Ghz</li>
                 <li>Disco HDD 720 GB</li>
                 <li>RAM 12 GB</li>
@@ -185,11 +158,6 @@
                 <li>WINDOWS 2016 R2</li>
                 <li>Mitigación DDOS hasta 2GBs</li>
                 <li>Hasta 300 PJs ON sin lag</li>
-                <li>Ruleta de premios</li>
-                <li>Ranking Mensual</li>
-                <li>Ranking Semanal</li>
-                <li>Ranking Detallado</li>
-                <li>Escala de premios</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>

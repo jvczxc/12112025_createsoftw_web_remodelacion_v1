@@ -13,6 +13,12 @@ class ModeloControlador{
     static function vps_pre_armado(){           require_once 'view/vps_pre_armado.php';    }
     static function server_dedicado(){          require_once 'view/server_dedicado.php';    }
     static function dominio_y_hosting(){        require_once 'view/dominio_y_hosting.php';    }
+    static function paneles(){                  require_once 'view/paneles.php';    }
+    static function hosting(){                  require_once 'view/hosting.php';    }
+    static function migra(){                    require_once 'view/migra.php';    }
+    static function solo(){                     require_once 'view/solo.php';    }
+    static function vps(){                      require_once 'view/vps.php';    }
+    static function webshaiya(){                require_once 'view/webshaiya.php';    }
     static function tyc(){                      require_once 'view/tyc.php';    }
     static function construcion(){              require_once 'view/construcion.php';    }
 

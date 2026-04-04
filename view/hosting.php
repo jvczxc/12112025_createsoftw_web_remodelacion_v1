@@ -58,7 +58,7 @@
             list-style: none;
             padding: 0;
             margin: 20px 0;
-            height: 800px;
+            height: 310px;
             overflow-y: auto;
             border-bottom: 1px solid var(--corporate-colore);
         }
@@ -98,7 +98,7 @@
         .terms-container h1, .terms-container h2 {
             color: var(--corporate-color);
         }
-
+        
         .terms-content {
             height: 400px;
             overflow-y: scroll;
@@ -106,94 +106,70 @@
             padding: 15px;
             background: #fafafa;
         }
+        .margent{
+            margin-top: 50px;
+        }
     </style>
-    <h1 class="h1">Elije como quieres tu VPS prearmado de Shaiya y haz realidad tu emprendimiento.</h1>
-    <div class="pricing-container">
+    <h1 class="h1">Si ya tienes el dominio, Elije  tu hosting a tu medida y publica tu web.</h1>
+    <div class="pricing-container margent">
+        
         <div class="pricing-card">
-            <h2>Básico</h2>
-            <div class="price">25 USD<font class="fontprice">/m</font></div>
+            <h2>basico</h2>
+            <div class="price">3,96 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico</li>
-                <li>Server Pre-instalado listo para editar y testear</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>Subdominio para Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
-                <li>Dirección de IP dedicada</li>
-                <li>2 Núcleos x 3.0 Ghz</li>
-                <li>Disco HDD 120 GB</li>
-                <li>RAM 2 GB</li>
-                <li>Ancho Banda 200 MBP/s Puertos Ilimitado</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 200MBs</li>
-                <li>Hasta 25 PJs ON sin lag</li>
+                <li>1 GB RAM / 1 CPU</li>
+                <li>10 sitios web</li>
+                <li>~7.500 visitas al mes</li>
+                <li>20 GB NVME</li>
+                <li>Creador de sitios</li>
+                <li>Respaldo Semanal</li>
+                <li>Ancho de banda ilimitado</li>
+                <li>Garantía de Satisfacción</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="25">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="3,96">Pagar Ahora</button> 
+        </div>
 
         <div class="pricing-card">
-            <h2>Emprendedor</h2>
-            <div class="price">60 USD<font class="fontprice">/m</font></div>
+            <h2>Profesional</h2>
+            <div class="price">8 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico + Staff GS y GMs</li>
-                <li>Server Pre-instalado listo para editar</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>tuservershaiya.com Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
-                <li>Dirección de IP dedicada</li>
-                <li>Sistema de Notices Automático</li>
-                <li>2 Núcleos x 3.0 Ghz</li>
-                <li>Disco HDD 720 GB</li>
-                <li>RAM 12 GB</li>
-                <li>Ancho Banda 500 MBP/s</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 500MBs</li>
-                <li>Hasta 80 PJs ON sin lag</li>
-                <li>Escala de premios</li>
-                <li>Res web de PJ</li>
+                <li>2 GB RAM / 2 CPU</li>
+                <li>Sitio Web ilimitado</li>
+                <li>~50.000 visitas al mes</li>
+                <li>40 GB NVME</li>
+                <li>Creador de sitios</li>
+                <li>Respaldo Semanal</li>
+                <li>Ancho de banda ilimitado</li>
+                <li>Garantía de Satisfacción</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="60">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="8">Pagar Ahora</button> 
+        </div>
 
         <div class="pricing-card">
-            <h2>Empresario</h2>
-            <div class="price">80 USD<font class="fontprice">/m</font></div>
+            <h2>Elite</h2>
+            <div class="price">17 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Panel básico + Staff GS y GMs</li>
-                <li>Server Pre-instalado listo</li>
-                <li>Videos tutoriales de soporte</li>
-                <li>Server Files + Cliente ONLINE</li>
-                <li>Seguridad Anti HACKERS</li>
-                <li>tuservershaiya.com Web Personalizada</li>
-                <li>Registro + Boss Record+ Rank PvP + Rank GBR</li>
-                <li>Dirección de IP dedicada</li>
-                <li>Sistema de Notices Automático</li>
-                <li>2 Núcleos x 3.0 Ghz</li>
-                <li>Disco HDD 720 GB</li>
-                <li>RAM 12 GB</li>
-                <li>Ancho Banda 500 MBP/s</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 2GBs</li>
-                <li>Hasta 300 PJs ON sin lag</li>
-                <li>Ruleta de premios</li>
-                <li>Ranking Mensual</li>
-                <li>Ranking Semanal</li>
-                <li>Ranking Detallado</li>
-                <li>Escala de premios</li>
+                <li>4 GB RAM / 4 CPU</li>
+                <li>Sitio Web ilimitado</li>
+                <li>~250.000 visitas al mes</li>
+                <li>100 GB NVME</li>
+                <li>Creador de sitios</li>
+                <li>Respaldo Semanal</li>
+                <li>Ancho de banda ilimitado</li>
+                <li>Garantía de Satisfacción</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="80">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="17">Pagar Ahora</button> 
+        </div>
+
+
     </div>
 <?php require_once 'view/layouts/footers.php'; ?>

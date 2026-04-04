@@ -1,4 +1,9 @@
 <?php require_once 'view/layouts/headers.php'; ?>
+<style>
+    .margin {
+        margin-top: 30px;
+    }
+</style>
 
 
         <section id="inicio" class="hero-section">
@@ -67,7 +72,7 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section margin" id="contacts">
             <h2><?= const_0097 ?></h2>
             <form class="contact-form">
                 <label for="fullname"><?= const_0101 ?></label>

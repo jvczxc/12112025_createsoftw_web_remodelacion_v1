@@ -98,7 +98,7 @@
         .terms-container h1, .terms-container h2 {
             color: var(--corporate-color);
         }
-        
+
         .terms-content {
             height: 400px;
             overflow-y: scroll;
@@ -106,72 +106,73 @@
             padding: 15px;
             background: #fafafa;
         }
-        .margent{
-            margin-top: 50px;
+        .padm{
+            padding: 30px 50px;
+            text-align: justify;
+             color: var(--corporate-color);
+             font-size: 1.1em;
+        }
+        h3{
+            color: var(--highlight-color);
+             text-transform: uppercase;
+        }
+        .subtitle{
+            color: var(--corporate-colore);
+            font-weight: bold;
         }
     </style>
-    <h1 class="h1">Elije tu Dominio + Hosting, dale rienda suelta a tu emprendimiento. ¡Y hazlo realidad!.</h1>
-    <h1 class="h1">Elije  tu identidad en internet y haz que miren tu sitio en internet.</h1>
-    <?php require_once 'view/dominios/index.php'; ?>
-    <h1 class="h1">O si ya tienes el dominio, Elije  tu hosting a tu medida y publica tu web.</h1>
-    <div class="pricing-container margent">
-        
+    <h1 class="h1">Crear una web a medida nunca fue tan facil.</h1>
+
+<div class="padm">
+    <p>Toda la web hecha, todo a medida. responsiva. segura y anti inyeciones.</p>
+</br>
+     Compra el desarrollo de tu web personalizada para tu servidor de Shaiya. Nuestro equipo de expertos se encargará de crear una plataforma única y atractiva que refleje la esencia de tu servidor. Con características personalizadas, diseño a medida y funcionalidades específicas, tu web será el punto de encuentro perfecto para tu comunidad de jugadores. Desde la gestión de cuentas hasta la integración de eventos, nuestro servicio te brindará una experiencia completa y profesional. ¡Haz que tu servidor destaque con una web diseñada exclusivamente para ti!
+</div>
+    <div class="pricing-container">
         <div class="pricing-card">
-            <h2>basico</h2>
-            <div class="price">3,96 USD<font class="fontprice">/m</font></div>
+            <h2>Web Shaiya basica</h2>
+            <div class="price">225 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>1 GB RAM / 1 CPU</li>
-                <li>10 sitios web</li>
-                <li>~7.500 visitas al mes</li>
-                <li>20 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
+                <h3>Carasteristicas Utiles</h3>
+                <li>Registro de usuarios</li>
+                <li>porcentajes de faccion</li>
+                <li>Anti inyecion SQL server y MYSQL</li>
+                <li>PayPal Recarga Manual</li>
+                <li>Status Server</li>
+                <li>Rank PVP</li>
+                <li>Rank GBR</li>
             </ul>
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="3,96">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="740">Pagar Ahora</button> 
+        </div>
+        <div class="pricing-card">
+            <h2>Web Shaiya Pro</h2>
+            <div class="price">350 USD<font class="fontprice">/m</font></div>
+            <ul class="services-list">
+                <h3>Carasteristicas Utiles</h3>
+                <li>Registro de usuarios</li>
+                <li>porcentajes de faccion</li>
+                <li>Oro o Items en server</li>
+                <li>Anti inyecion SQL server y MYSQL</li>
+                <li>Pasarelas de PAGOS internacionales</li>
+                <li>PayPal Automatizado</li>
+                <li>Status Server</li>
+                <li>Rank PVP</li>
+                <li>Rank GBR</li>
+                <li class="subtitle">Desde Panel Usuario Pueden:</li>
+                <li>Cobrar Escalas de premios</li>
+                <li>Cobrar Ruletas de premios</li>
+                <li>Revivir Personajes</li>
+                <li>Ver sus propias estaditicas de personaje</li>
+            </ul>
+            <div class="terms-checkbox">
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+            </div>
+            <button class="btn-pay" name="pagar ahora" value="740">Pagar Ahora</button> 
         </div>
 
-        <div class="pricing-card">
-            <h2>Profesional</h2>
-            <div class="price">8 USD<font class="fontprice">/m</font></div>
-            <ul class="services-list">
-                <li>2 GB RAM / 2 CPU</li>
-                <li>Sitio Web ilimitado</li>
-                <li>~50.000 visitas al mes</li>
-                <li>40 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
-            </ul>
-            <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
-            </div>
-            <button class="btn-pay" name="pagar ahora" value="8">Pagar Ahora</button> 
-        </div>
-
-        <div class="pricing-card">
-            <h2>Elite</h2>
-            <div class="price">17 USD<font class="fontprice">/m</font></div>
-            <ul class="services-list">
-                <li>4 GB RAM / 4 CPU</li>
-                <li>Sitio Web ilimitado</li>
-                <li>~250.000 visitas al mes</li>
-                <li>100 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
-            </ul>
-            <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
-            </div>
-            <button class="btn-pay" name="pagar ahora" value="17">Pagar Ahora</button> 
-        </div>
 
 
     </div>

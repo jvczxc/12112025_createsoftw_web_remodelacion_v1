@@ -88,7 +88,7 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -99,6 +99,7 @@ header {
     display: flex;
     align-items: center;
     order: -1; /* Mueve el logo a la izquierda (inicio) */
+    margin-right: 10px;
 }
 
 .logo-img {
@@ -157,6 +158,7 @@ header {
     transform: translateY(10px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     border-top: 3px solid var(--highlight-color);
+    overflow: visible;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -177,6 +179,38 @@ header {
 .dropdown-menu li a:hover {
     background-color: #5a1416; /* Tono más claro del corporativo */
     color: var(--highlight-color);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-menu-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: var(--corporate-color);
+    list-style: none;
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    border-left: 3px solid var(--highlight-color);
+    z-index: 600;
+}
+
+.dropdown-submenu:hover .dropdown-menu-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.dropdown-submenu:focus-within .dropdown-menu-submenu,
+.dropdown-submenu.open .dropdown-menu-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 /* Toggle para Móvil */
@@ -721,6 +755,28 @@ footer {
         opacity: 1;
         visibility: visible;
         max-height: 500px; /* Suficiente para expandirse */
+    }
+
+    .dropdown-menu-submenu {
+        position: static;
+        min-width: unset;
+        transform: none;
+        border-left: none;
+        padding-left: 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdown-submenu:hover .dropdown-menu-submenu {
+        max-height: 300px;
+    }
+
+    .dropdown-submenu.open .dropdown-menu-submenu,
+    .dropdown-submenu:focus-within .dropdown-menu-submenu {
+        max-height: 300px;
     }
 
     /* Otras secciones */

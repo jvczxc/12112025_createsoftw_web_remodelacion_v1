@@ -26,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
+    // 2.1 Submenu anidado: soporte de apertura por click
+    const submenuTriggers = document.querySelectorAll('.dropdown-submenu > .dropdown-item');
+    submenuTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const parent = trigger.parentElement;
+            parent.classList.toggle('open');
+        });
+    });
+
     // 3. Botón "Subir al Inicio" (Scroll to Top)
     const scrollToTopBtn = document.getElementById('scroll-to-top');
 

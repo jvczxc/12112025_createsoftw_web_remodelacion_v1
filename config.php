@@ -37,8 +37,8 @@ switch ($idioma) {
     todas las variables del español del front vistas por el usuario de nuestra web en constantes */
     /* comenzaremos con la URL 'view/layouts/headers.php' asi como tambien los sub menus*/
     define("const_0001","INICIO");
-    define("const_0002","Video juego shaiya");
-    define("const_0003","Cursos");
+    define("const_0002","Servicios de shaiya");
+    define("const_0003","Hosting, Dominios y servers");
     define("const_0004","Contratar servicio");
     define("const_0005","servicios");
     define("const_0006","diseños gráficos");
@@ -58,17 +58,17 @@ switch ($idioma) {
     define("const_0020","Trabaja con Nosotros");
     define("const_0021","Createsoftw - Desarrollo de webs, video juegos, cursos y mas visitanos");
     define("const_0022","Cargando web...");
-    define("const_0023","VPS pre-armado (Shaiya)");
-    define("const_0024","servidor dedicado (Shaiya)");
-    define("const_0025","dominio + hosting (Shaiya)");
-    define("const_0025a","Panel Administrativo (Shaiya)");
+    define("const_0023","VPS pre-armado");
+    define("const_0024","SERVER DEDICADO");
+    define("const_0025","dominio + hosting");
+    define("const_0025a","Panel Administrativo + Panel Patch");
     define("const_0026","Aprender C++");
     define("const_0026a","Aprender Git y GitHub");
     define("const_0027","Aprender PHP");
     define("const_0028","Aprender Ajax & javaScript");
     define("const_0029","Aprender (Bases de Datos)");
-    define("const_0030","Aprende Ofimatica (Microsoft Office y Libre Office)");
-    define("const_0031","Maqueteo Web con Inteligencia artificial (IA)");
+    define("const_0030","Aprende Ofimatica");
+    define("const_0031","Maqueteo Web con (IA)");
     define("const_0032","Crea tu web con nosotros");
     define("const_0033","Solicita un presupuesto");
     define("const_0034","Nuestro Portafolio Git");
@@ -95,8 +95,8 @@ switch ($idioma) {
     define("const_0055","Ruso");
     define("const_0056","chino");
     define("const_0057","createsoftw");
-    define("const_0058","cursos");
-    define("const_0059","Contratar servicio");
+    define("const_0058","Curso de programación y desarrollo web");
+    define("const_0059","NUESTROS SERVICIOS EN CREATESOFTW");
     define("const_0060","servicios");
     define("const_0061","desarrollo web");
     define("const_0062","hosting y dominio");
@@ -159,8 +159,8 @@ switch ($idioma) {
     define("const_0119","Trabaja con Nosotros");
     define("const_0120","Todos los derechos reservados.");
     define("const_0121","Desarrollo de webs, video juegos, cursos y mas visitanos");
-/* Fin Index Footter y Header */
-    define("const_0122","const_0122");
+    /* Fin Index Footter y Header */
+    define("const_0122","Reserva tu Dominio + Hosting por solo $45 USD");
     define("const_0123","const_0123");
     define("const_0124","const_0124");
     define("const_0125","const_0125");
