@@ -21,7 +21,7 @@
             <div class="service-table-container">
                 <div class="service-card">
                     <h3><?= const_0006 ?></h3>
-                    <img src="view/img/logo/placeholder_diseno.png" alt="Diseños Gráficos" title="<?= const_0110 ?>">
+                    <img src="view/img/logo/placeholder_diseno.png" alt="<?= const_0006 ?>" title="<?= const_0110 ?>">
                 </div>
                 <div class="service-card">
                     <h3><?= const_0007 ?></h3>

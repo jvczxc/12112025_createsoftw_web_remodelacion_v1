@@ -1,4 +1,4 @@
-<?php require_once 'view/layouts/headers.php'; ?>
+﻿<?php require_once 'view/layouts/headers.php'; ?>
 <style>
         :root {
             --corporate-color: #460809; /* [cite: 1, 15] */
@@ -117,199 +117,193 @@
              text-transform: uppercase;
         }
     </style>
-    <h1 class="h1">¿Sabias que no es saludable poner tu panel admin dentro de tu hosting?</h1>
+    <h1 class="h1"><?= const_0255 ?></h1>
 
 <div class="padm">
-    <p>Por eso y pensando en la seguridad de tu servidor hemos desarrollado un panel administrativo externo, 
-        con el cual podrás administrar tu servidor de forma segura y sin riesgos de ataques a tu hosting, 
-        además de que podrás acceder a tu panel desde cualquier lugar del mundo sin necesidad de estar conectado
-         a tu red local. y hasta con tu movil podras aceder desde el navegador de tu prefeencia, 
-         todo 100% encriptado.
-    </p>
+    <p><?= const_0256 ?></p>
 </br>
-       Ven y alquila con nosotros tu panel administrativo externo y disfruta de la seguridad y comodidad que te ofrecemos, con nuestro panel podrás administrar tu servidor de forma segura y sin riesgos de ataques a tu hosting, además de que podrás acceder a tu panel desde cualquier lugar del mundo sin necesidad de estar conectado a tu red local. y hasta con tu movil podras aceder desde el navegador de tu prefeencia, todo 100% encriptado.
+       <?= const_0257 ?>
 </div>
     <div class="pricing-container">
         <div class="pricing-card">
-            <h2>Panel Administrativo</h2>
+            <h2><?= const_0258 ?></h2>
             <div class="price">6 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <h3>Carasteristicas Utiles</h3>
-                <li>Herramientas de Mantenimiento</li>
-                <li>Revivir Personaje</li>
-                <li>Cambiar Faccion</li>
-                <li>AP por Cuenta</li>
-                <li>AP por Personaje</li>
-                <li>Eliminar AP</li>
-                <li>Historial de Chat</li>
-                <li>Buscar Historial de Char de Personaje</li>
-                <li>Buscar Drop</li>
-                <li>Info de Cuenta</li>
-                <li>Herramienta sobre Jugadores</li>
-                <li>Loteria aleatoria</li>
-                <li>Ganador Online Aleatorio</li>
-                <li>Buscar cuenta por nombre de Personje</li>
-                <li>Buscar Cuenta por nombre de Usuario</li>
-                <li>Todas las cuentas asosiadas a la IP</li>
-                <li>Buscar Direcion de IP</li>
-                <li>Encontrar viejos nombres de personajes muertos/vivos</li>
-                <li>Editar jugador</li>
-                <li>Editar Item de inventario</li>
-                <li>Borrar un Items</li>
-                <li>Editar Bodega</li>
-                <li>Borrar item de Bodega</li>
-                <li>Colocar Personajes de cuenta en carcel</li>
-                <li>Sacar todos los PJs de Carcel de una cuenta</li>
-                <li>Cuentas Baneadas</li>
-                <li>Banear Cuenta</li>
-                <li>Desbanear Cuenta</li>
-                <li>Otras herramienta</li>
-                <li>Buscar Items Por categorias</li>
-                <li>Lista de Items</li>
-                <li>Lista de Monstruos</li>
-                <li>Desbanear Gremio</li>
-                <li>Cambiar nombre de Gremio</li>
-                <li>Cambiar Lider de Gremio</li>
-                <li>Jugadores Online</li>
-                <li>Posibles Stat Padings</li>
-                <li>Herramientas de Manuntencion Extra</li>
-                <li>Normas del Panel</li>
-                <li>Registrar Usuario (Completo)</li>
-                <li>Usuarios Multicuentas PW NUEVO</li>
-                <li>Puntos Dobles Cuando Donan</li>
-                <li>Registro Doners</li>
-                <li>WebPoint Por Usuario</li>
-                <li>Restar WebAP a Usuario</li>
-                <li>Sumar SOLO Webpoints a Usuario</li>
-                <li>Ver listado de Gremios y lideres</li>
-                <li>Ver Bodega de Gremio</li>
-                <li>Borrar item de bodega Gremial</li>
-                <li>Ver quien mato a quien dentro de PvP</li>
-                <li>Ver quien mato a la Victima</li>
-                <li>ver nombre actual asecinos de pvp</li>
-                <li>historial de Trades Busqueda por PJ</li>
-                <li>historial de Trades Busqueda por Usuario</li>
-                <li>Bosses Muertos</li>
-                <li>Transpasos de AP y Rango</li>
-                <li>Transpasar AP</li>
-                <li>Transpasar Rangos</li>
-                <li>Bugs Comunes</li>
-                <li>Bug PJ No entra</li>
-                <li>Supervision de Staff</li>
-                <li>Items Creados por Staff</li>
-                <li>Supervision de staff</li>
-                <li>Acciones de staff</li>
-                <li>Borrar creados por Staff Buscar por Usuario</li>
-                <li>Borrar creados por Staff Buscar por PJ</li>
-                <li>Operaciones de Banco</li>
-                <li>Agregar item a banco</li>
-                <li>borrar item a banco</li>
-                <li>Visualizar banco de usuario</li>
-                <li>Movimientos Ilegales</li>
-                <li>Delvolver Items</li>
-                <li>recuperar Item robado</li>
-                <li>tradeos ilegales</li>
-                <li>Comprobar Existencia de Item en inventario</li>
-                <li>Ver quien tiene mas Stat en el servidor</li>
-                <li>Roll-Backs Personal</li>
-                <li>recuperar Cuenta Completa robada</li>
-                <li>recuperar Personajes robados</li>
-                <li>Ver Inventario en Restore (Respaldos)</li>
-                <li>Ver Bodegas en Restore (Respaldos)</li>
-                <li>Otros Visuales</li>
-                <li>Onlines En general</li>
-                <li>Rank de Gremios</li>
-                <li>Rank de PvP</li>
-                <li>Herramientas de Cuentas</li>
-                <li>Operaciones de Cuentas</li>
-                <li>Banear Cuentas</li>
-                <li>Ver Baneos por tiempo</li>
-                <li>Ver Baneos en General</li>
-                <li>Cambiar Email de una Cuenta</li>
-                <li>Cambiar Pass de una Cuenta</li>
-                <li>Ver Emails Cambiados</li>
-                <li>Cambiar ID a Cuenta</li>
-                <li>Ver IDs Cambiados</li>
-                <li>Cambiar ID a Cuenta y NOmbres de PJs</li>
-                <li>Nombres Cambiados en PJs</li>
-                <li>ver Contrase&ntilde;a de cuenta</li>
-                <li>Editar Mods</li>
-                <li>Editar Mobs</li>
-                <li>Top Maximo Editado</li>
-                <li>Ver Top Maximo Editado</li>
-                <li>Ver Cantidad de Items en un Gremio</li>
-                <li>Ver la Cantidad de Items que posee un personaje en Gremio</li>
-                <li>Ver Cantidad de Items en una Cuenta</li>
-                <li>Ver la Cantidad de Items que posee un personaje en Inventario</li>
-                <li>Ver la Cantidad de Items que posee un personaje en Bodega</li>
-                <li>Ver Info link en Set</li>
-                <li>Ver Info PJ Inventario</li>
-                <li>Ver Info PJ Bodega</li>
-                <li>Ver Info PJ Gremio</li>
-                <li>Eliminar Cuentas</li>
-                <li>Eliminar Cuenta de Usuario</li>
-                <li>Eliminar Cuenta de Usuario Inactivos por mas de 2 Anos</li>
-                <li>Ver Items Dupeados</li>
-                <li>Ver Que Items Intento Dupear el jugador</li>
-                <li>Ver Dupeos  de jugadores activos (Online)Completa</li>
-                <li>Ver Dupeos  de jugadores Baneados Completa</li>
-                <li>Buscar Sospechoso de Dupeo por UserID</li>
-                <li>Devolver item Dupeado del Jugador</li>
-                <li>Agregar Staff</li>
-                <li>Add Tag Paint normal</li>
-                <li>Add Staff P-GS normal</li>
-                <li>Add Staff GS normal</li>
-                <li>Add Staff P-GSL normal</li>
-                <li>Add Staff GSL normal</li>
-                <li>Add Staff GS status 80</li>
-                <li>Add Staff GSL status 80</li>
-                <li>Add Staff GS status 64</li>
-                <li>Add Staff GSL status 64</li>
-                <li>Add Staff GS status 48</li>
-                <li>Add Staff GSM status 48</li>
-                <li>Add Staff P-GM status 48</li>
-                <li>Add Staff GM status 32</li>
-                <li>Add Staff ADM Status 16</li>
-                <li>Add Staff DEV Status 16</li>
-                <li>Quitar Staff</li>
-                <li>Ver Lista de Comandos Completa</li>
-                <li>Quitar UserID del Staff</li>
-                <li>Quitar Todo el Staff del Server</li>
-                <li>Ver Staff Completo del Servidor</li>
-                <li>Ver Pagos de Servicios</li>
-                <li>Registro Pagos Hostings</li>
-                <li>Registro Pagos VPS</li>
-                <li>Ver Registro Pagos_Hostings</li>
-                <li>Ver Registro Pagos VPS</li>
-                <li>Subidas de Parches</li>
-                <li>Cargar Parche</li>
-                <li>Listado Comandos Disponibles</li>
-                <li>Lista Comandos</li>
+                <h3><?= const_0270 ?></h3>
+                <li><?= const_0271 ?></li>
+                <li><?= const_0272 ?></li>
+                <li><?= const_0273 ?></li>
+                <li><?= const_0274 ?></li>
+                <li><?= const_0275 ?></li>
+                <li><?= const_0276 ?></li>
+                <li><?= const_0277 ?></li>
+                <li><?= const_0278 ?></li>
+                <li><?= const_0279 ?></li>
+                <li><?= const_0280 ?></li>
+                <li><?= const_0281 ?></li>
+                <li><?= const_0282 ?></li>
+                <li><?= const_0283 ?></li>
+                <li><?= const_0284 ?></li>
+                <li><?= const_0285 ?></li>
+                <li><?= const_0286 ?></li>
+                <li><?= const_0287 ?></li>
+                <li><?= const_0288 ?></li>
+                <li><?= const_0289 ?></li>
+                <li><?= const_0290 ?></li>
+                <li><?= const_0291 ?></li>
+                <li><?= const_0292 ?></li>
+                <li><?= const_0293 ?></li>
+                <li><?= const_0294 ?></li>
+                <li><?= const_0295 ?></li>
+                <li><?= const_0296 ?></li>
+                <li><?= const_0297 ?></li>
+                <li><?= const_0298 ?></li>
+                <li><?= const_0299 ?></li>
+                <li><?= const_0300 ?></li>
+                <li><?= const_0301 ?></li>
+                <li><?= const_0302 ?></li>
+                <li><?= const_0303 ?></li>
+                <li><?= const_0304 ?></li>
+                <li><?= const_0305 ?></li>
+                <li><?= const_0306 ?></li>
+                <li><?= const_0307 ?></li>
+                <li><?= const_0308 ?></li>
+                <li><?= const_0309 ?></li>
+                <li><?= const_0310 ?></li>
+                <li><?= const_0311 ?></li>
+                <li><?= const_0312 ?></li>
+                <li><?= const_0313 ?></li>
+                <li><?= const_0314 ?></li>
+                <li><?= const_0315 ?></li>
+                <li><?= const_0316 ?></li>
+                <li><?= const_0317 ?></li>
+                <li><?= const_0318 ?></li>
+                <li><?= const_0319 ?></li>
+                <li><?= const_0320 ?></li>
+                <li><?= const_0321 ?></li>
+                <li><?= const_0322 ?></li>
+                <li><?= const_0323 ?></li>
+                <li><?= const_0324 ?></li>
+                <li><?= const_0325 ?></li>
+                <li><?= const_0326 ?></li>
+                <li><?= const_0327 ?></li>
+                <li><?= const_0328 ?></li>
+                <li><?= const_0329 ?></li>
+                <li><?= const_0330 ?></li>
+                <li><?= const_0331 ?></li>
+                <li><?= const_0332 ?></li>
+                <li><?= const_0333 ?></li>
+                <li><?= const_0334 ?></li>
+                <li><?= const_0335 ?></li>
+                <li><?= const_0336 ?></li>
+                <li><?= const_0337 ?></li>
+                <li><?= const_0338 ?></li>
+                <li><?= const_0339 ?></li>
+                <li><?= const_0340 ?></li>
+                <li><?= const_0341 ?></li>
+                <li><?= const_0342 ?></li>
+                <li><?= const_0343 ?></li>
+                <li><?= const_0344 ?></li>
+                <li><?= const_0345 ?></li>
+                <li><?= const_0346 ?></li>
+                <li><?= const_0347 ?></li>
+                <li><?= const_0348 ?></li>
+                <li><?= const_0349 ?></li>
+                <li><?= const_0350 ?></li>
+                <li><?= const_0351 ?></li>
+                <li><?= const_0352 ?></li>
+                <li><?= const_0353 ?></li>
+                <li><?= const_0354 ?></li>
+                <li><?= const_0355 ?></li>
+                <li><?= const_0356 ?></li>
+                <li><?= const_0357 ?></li>
+                <li><?= const_0358 ?></li>
+                <li><?= const_0359 ?></li>
+                <li><?= const_0360 ?></li>
+                <li><?= const_0361 ?></li>
+                <li><?= const_0362 ?></li>
+                <li><?= const_0363 ?></li>
+                <li><?= const_0364 ?></li>
+                <li><?= const_0365 ?></li>
+                <li><?= const_0366 ?></li>
+                <li><?= const_0367 ?></li>
+                <li><?= const_0368 ?></li>
+                <li><?= const_0369 ?></li>
+                <li><?= const_0370 ?></li>
+                <li><?= const_0371 ?></li>
+                <li><?= const_0372 ?></li>
+                <li><?= const_0373 ?></li>
+                <li><?= const_0374 ?></li>
+                <li><?= const_0375 ?></li>
+                <li><?= const_0376 ?></li>
+                <li><?= const_0377 ?></li>
+                <li><?= const_0378 ?></li>
+                <li><?= const_0379 ?></li>
+                <li><?= const_0380 ?></li>
+                <li><?= const_0381 ?></li>
+                <li><?= const_0382 ?></li>
+                <li><?= const_0383 ?></li>
+                <li><?= const_0384 ?></li>
+                <li><?= const_0385 ?></li>
+                <li><?= const_0386 ?></li>
+                <li><?= const_0387 ?></li>
+                <li><?= const_0388 ?></li>
+                <li><?= const_0389 ?></li>
+                <li><?= const_0390 ?></li>
+                <li><?= const_0391 ?></li>
+                <li><?= const_0392 ?></li>
+                <li><?= const_0393 ?></li>
+                <li><?= const_0394 ?></li>
+                <li><?= const_0395 ?></li>
+                <li><?= const_0396 ?></li>
+                <li><?= const_0397 ?></li>
+                <li><?= const_0398 ?></li>
+                <li><?= const_0399 ?></li>
+                <li><?= const_0400 ?></li>
+                <li><?= const_0401 ?></li>
+                <li><?= const_0402 ?></li>
+                <li><?= const_0403 ?></li>
+                <li><?= const_0404 ?></li>
+                <li><?= const_0405 ?></li>
+                <li><?= const_0406 ?></li>
+                <li><?= const_0407 ?></li>
+                <li><?= const_0408 ?></li>
+                <li><?= const_0409 ?></li>
+                <li><?= const_0410 ?></li>
+                <li><?= const_0411 ?></li>
+                <li><?= const_0412 ?></li>
+                <li><?= const_0413 ?></li>
+                <li><?= const_0414 ?></li>
+                <li><?= const_0415 ?></li>
+                <li><?= const_0416 ?></li>
+                <li><?= const_0417 ?></li>
+                <li><?= const_0418 ?></li>
+                <li><?= const_0419 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="180">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="180"><?= const_0137 ?></button> 
         </div>
 
         <div class="pricing-card">
-            <h2>Panel de Parches</h2>
+            <h2><?= const_0259 ?></h2>
             <div class="price">6 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <h3>Carasteristicas Utiles</h3>
-                <li>Subida de archivos Patch</li>
-                <li>Actualizacion remota de clientes</li>
-                <li>Edicion de web Updater.exe</li>
-                <li>Activacion de funciones</li>
-                <li>Registro</li>
-                <li>Recuperar contraseña</li>
-                <li>Donacion</li>
-                <li>status server</li>
+                <h3><?= const_0421 ?></h3>
+                <li><?= const_0422 ?></li>
+                <li><?= const_0423 ?></li>
+                <li><?= const_0424 ?></li>
+                <li><?= const_0425 ?></li>
+                <li><?= const_0426 ?></li>
+                <li><?= const_0427 ?></li>
+                <li><?= const_0428 ?></li>
+                <li><?= const_0429 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="740">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="740"><?= const_0137 ?></button> 
         </div>
 
 

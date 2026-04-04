@@ -97,46 +97,46 @@
     </style>
 <center>
     <div class="form-container margen">
-        <h2>Solicitud de Migración</h2>
+        <h2><?= const_0223 ?></h2>
         
         <form action="#" method="post">
             <!-- Información del Dominio -->
             <div class="form-group">
-                <label for="domain_name">Nombre del Dominio a Migrar:</label>
+                <label for="domain_name"><?= const_0224 ?></label>
                 <input type="text" id="domain_name" name="domain_name" placeholder="ejemplo.com" required>
             </div>
     
             <div class="form-group">
-                <label for="auth_code">Código de Autorización (Auth-Code/EPP):</label>
-                <input type="text" id="auth_code" name="auth_code" placeholder="Ingrese el código proporcionado por su actual registrador" required>
+                <label for="auth_code"><?= const_0225 ?></label>
+                <input type="text" id="auth_code" name="auth_code" placeholder="<?= const_0226 ?>" required>
             </div>
     
             <!-- Detalles del Hosting -->
             <div class="form-group">
-                <label for="current_provider">Proveedor Actual:</label>
+                <label for="current_provider"><?= const_0227 ?></label>
                 <input type="text" id="current_provider" name="current_provider" placeholder="Nombre de la empresa actual">
             </div>
     
             <div class="form-group">
-                <label for="migration_type">Tipo de Migración:</label>
+                <label for="migration_type"><?= const_0228 ?></label>
                 <select id="migration_type" name="migration_type">
-                    <option value="only_domain">Solo Dominio</option>
-                    <option value="domain_hosting">Dominio y Contenido (Hosting)</option>
-                    <option value="emails">Migración de Correos Electrónicos</option>
+                    <option value="only_domain"><?= const_0229 ?></option>
+                    <option value="domain_hosting"><?= const_0230 ?></option>
+                    <option value="emails"><?= const_0231 ?></option>
                 </select>
             </div>
     
             <!-- Comentarios Adicionales -->
             <div class="form-group">
-                <label for="notes">Notas o Instrucciones Especiales:</label>
-                <textarea id="notes" name="notes" rows="4" placeholder="Indique si hay bases de datos o configuraciones DNS específicas..."></textarea>
+                <label for="notes"><?= const_0232 ?></label>
+                <textarea id="notes" name="notes" rows="4" placeholder="<?= const_0233 ?>"></textarea>
             </div>
     
-            <button type="submit" class="btn-submit">Iniciar Proceso de Migración</button>
+            <button type="submit" class="btn-submit"><?= const_0234 ?></button>
         </form>
     
         <div class="form-footer">
-            © 2024 Departamento de IT - Gestión de Infraestructura
+            © 2024 <?= const_0235 ?>
         </div>
     </div>
 </center>

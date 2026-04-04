@@ -120,67 +120,67 @@ $dolar4 = str_replace('.00', '', $dolar3);
             margin-top: 50px;
         }
     </style>
-    <h1 class="h1">Elije tu Dominio + Hosting, dale rienda suelta a tu emprendimiento. ¡Y hazlo realidad!.</h1>
-    <h1 class="h1">Elije  tu identidad en internet y haz que miren tu sitio en internet.</h1>
+    <h1 class="h1"><?= const_0219 ?></h1>
+    <h1 class="h1"><?= const_0220 ?></h1>
     <?php require_once 'view/dominios/index.php'; ?>
-    <h1 class="h1">O si ya tienes el dominio, Elije  tu hosting a tu medida y publica tu web.</h1>
+    <h1 class="h1"><?= const_0221 ?></h1>
     <div class="pricing-container margent">
         
         <div class="pricing-card">
-            <h2>basico</h2>
+            <h2><?= const_0124 ?></h2>
             <div class="price"><?= $dolar1 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>1 GB RAM / 1 CPU</li>
-                <li>10 sitios web</li>
-                <li>~7.500 visitas al mes</li>
+                <li><?= const_0127 ?></li>
+                <li><?= const_0129 ?></li>
                 <li>20 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
+                <li><?= const_0132 ?></li>
+                <li><?= const_0133 ?></li>
+                <li><?= const_0134 ?></li>
+                <li><?= const_0135 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>"><?= const_0137 ?></button> 
         </div>
 
         <div class="pricing-card">
-            <h2>Profesional</h2>
+            <h2><?= const_0125 ?></h2>
             <div class="price">8 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>2 GB RAM / 2 CPU</li>
-                <li>Sitio Web ilimitado</li>
-                <li>~50.000 visitas al mes</li>
+                <li><?= const_0128 ?></li>
+                <li><?= const_0130 ?></li>
                 <li>40 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
+                <li><?= const_0132 ?></li>
+                <li><?= const_0133 ?></li>
+                <li><?= const_0134 ?></li>
+                <li><?= const_0135 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="8">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="8"><?= const_0137 ?></button> 
         </div>
 
         <div class="pricing-card">
-            <h2>Elite</h2>
+            <h2><?= const_0126 ?></h2>
             <div class="price">17 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>4 GB RAM / 4 CPU</li>
-                <li>Sitio Web ilimitado</li>
-                <li>~250.000 visitas al mes</li>
+                <li><?= const_0128 ?></li>
+                <li><?= const_0131 ?></li>
                 <li>100 GB NVME</li>
-                <li>Creador de sitios</li>
-                <li>Respaldo Semanal</li>
-                <li>Ancho de banda ilimitado</li>
-                <li>Garantía de Satisfacción</li>
+                <li><?= const_0132 ?></li>
+                <li><?= const_0133 ?></li>
+                <li><?= const_0134 ?></li>
+                <li><?= const_0135 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="17">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="17"><?= const_0137 ?></button> 
         </div>
 
 

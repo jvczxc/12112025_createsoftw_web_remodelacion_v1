@@ -100,28 +100,28 @@
         }
     </style>
     <div class="terms-container">
-        <h1>Términos y Condiciones</h1>
+        <h1><?= const_0240 ?></h1>
         <div class="terms-content">
-            <h2>Artículo I: Responsabilidades</h2>
-            <p>Usted el Contratante, acepta y se hace responsable del mantenimiento del servidor de shaiya así como sus pagos[cite: 18]. La empresa (CREATESOFTW) queda libre de cerrar o eliminar de la nube archivos y VPS por falta de pago[cite: 19]. La empresa queda libre de responsabilidad con cualquier servidor bajo el dominio createsotfw.com[cite: 20]. El uso indebido para actos ilícitos o ataques hackers permite a la empresa suspender el contrato[cite: 21]. El contratante renuncia a cualquier reclamación de reembolso según el Articulo III[cite: 21].</p>
+            <h2><?= const_0241 ?></h2>
+            <p><?= const_0242 ?></p>
 
-            <h2>Artículo II: Armado de VPS Juegos</h2>
-            <p>El contratante debe aprender mediante los tutoriales proporcionados[cite: 22]. La empresa no está obligada a armar listas de Drop, ItemMall o edición de .SDATA[cite: 24]. Cualquier cambio adicional solicitado requiere un pago previo convenido[cite: 26]. El contratante renuncia al reembolso en el instante de la entrega de la programación[cite: 26].</p>
+            <h2><?= const_0243 ?></h2>
+            <p><?= const_0244 ?></p>
 
-            <h2>Artículo III: Pagos y Reembolsos</h2>
-            <p>No se podrá pedir reembolso del 100% una vez entregado el VPS y pasadas 24 horas del pago[cite: 27]. Scripts, APPs y programaciones personalizadas quedan excluidos de cualquier reclamo de reembolso[cite: 28, 29, 30]. En caso de reembolso aceptado, se descontarán gastos administrativos y días de soporte[cite: 31]. Cualquier difamación a Createsoftw.com anula el derecho a reembolso[cite: 32]. Disputas en PayPal sin acuerdo previo inhabilitarán futuros contratos[cite: 34].</p>
+            <h2><?= const_0245 ?></h2>
+            <p><?= const_0246 ?></p>
 
-            <h2>Artículo IV: Área de Trabajo y Ataques de Terceros</h2>
-            <p>El contratante debe realizar su trabajo en su ordenador local; Createsoftw no se hace responsable por pérdida de datos debido a ataques de terceros (ransomware)[cite: 35, 36, 37].</p>
+            <h2><?= const_0247 ?></h2>
+            <p><?= const_0248 ?></p>
 
-            <h2>Artículo V: Páginas Web Prearmadas</h2>
-            <p>Las webs prearmadas (modelos Breakers, Latino Original) son propiedad exclusiva de Createsoftw y no son de libre distribución[cite: 39, 40]. Createsoftw se reserva los derechos de autor sobre las modificaciones[cite: 40].</p>
+            <h2><?= const_0249 ?></h2>
+            <p><?= const_0250 ?></p>
 
-            <h2>Artículo VI: Políticas de Retención de Pagos</h2>
-            <p>El servicio solo se entregará si el dinero en PayPal está liberado, lo cual puede tardar de 7 a 30 días hábiles[cite: 43, 44].</p>
+            <h2><?= const_0251 ?></h2>
+            <p><?= const_0252 ?></p>
 
-            <h2>Artículo VII: Limitaciones de Cuentas PayPal</h2>
-            <p>Si un pago es retenido por limitación de PayPal, el contratante podrá pedir reembolso a PayPal o enviar el dinero a una cuenta secundaria asignada por la empresa[cite: 45, 46, 48].</p>
+            <h2><?= const_0253 ?></h2>
+            <p><?= const_0254 ?></p>
         </div>
     </div>
 

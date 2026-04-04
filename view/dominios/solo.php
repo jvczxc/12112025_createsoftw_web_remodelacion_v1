@@ -23,7 +23,7 @@
             <h2><?= const_0122 ?></h2>
             <div class="domain-form" method="POST">
                 <div class="input-group">
-                    <input type="text" name="sld" id="sld" placeholder="Escribe el nombre aquí..." required 
+                    <input type="text" name="sld" id="sld" placeholder="<?= const_0260 ?>" required 
                     value="<?php echo isset($_POST['sld']) ? htmlspecialchars($_POST['sld']) : ''; ?>"
                     onkeyup="dominios(0)">
                 </div>

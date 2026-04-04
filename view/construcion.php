@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Construcción</title>
+    <title><?= const_0236 ?></title>
     <style>
         body, html {
             height: 100%;
@@ -69,13 +69,13 @@
 
     <div class="container">
         <div class="icon">🏗️</div>
-        <h1>Estamos trabajando</h1>
-        <p>Nuestro sitio web está actualmente en construcción para ofrecerte la mejor experiencia posible. ¡Volveremos pronto!</p>
+        <h1><?= const_0237 ?></h1>
+        <p><?= const_0238 ?></p>
         
         <div class="loader"></div>
 
         <div class="footer">
-            &copy; 2026 Tu Empresa. Todos los derechos reservados.
+            &copy; 2026 <?= const_0239 ?>
         </div>
     </div>
 

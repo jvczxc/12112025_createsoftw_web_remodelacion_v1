@@ -115,61 +115,61 @@ $dolar3 = str_replace('.00', '', $dolar3);
             background: #fafafa;
         }
     </style>
-    <h1 class="h1">Elije como quieres tu VPS prearmado de Shaiya y haz realidad tu emprendimiento.</h1>
-    <h1 class="h1">Tipos de VPS.</h1>
+    <h1 class="h1"><?= const_0159 ?></h1>
+    <h1 class="h1"><?= const_0160 ?></h1>
     <div class="pricing-container">
         <div class="pricing-card">
-            <h2>Básico</h2>
+            <h2><?= const_0161 ?></h2>
             <div class="price"><?= $dolar1 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Dirección de IP dedicada</li>
-                <li>2 Núcleos x 3.0 Ghz</li>
+                <li><?= const_0164 ?></li>
+                <li><?= const_0165 ?></li>
                 <li>Disco HDD 120 GB</li>
                 <li>RAM 2 GB</li>
-                <li>Ancho Banda 200 MBP/s Puertos Ilimitado</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 200MBs</li>
+                <li><?= const_0168 ?></li>
+                <li><?= const_0169 ?></li>
+                <li><?= const_0170 ?></li>
+                <li><?= const_0171 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>"><?= const_0137 ?></button> </div>
 
         <div class="pricing-card">
-            <h2>Emprendedor</h2>
+            <h2><?= const_0162 ?></h2>
             <div class="price"><?= $dolar2 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>2 Núcleos x 3.0 Ghz</li>
+                <li><?= const_0165 ?></li>
                 <li>Disco HDD 720 GB</li>
                 <li>RAM 12 GB</li>
-                <li>Ancho Banda 500 MBP/s</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 500MBs</li>
-                <li>Hasta 80 PJs ON sin lag</li>
+                <li><?= const_0174 ?></li>
+                <li><?= const_0169 ?></li>
+                <li><?= const_0170 ?></li>
+                <li><?= const_0175 ?></li>
+                <li><?= const_0176 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?= $dolar2 ?>">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar2 ?>"><?= const_0137 ?></button> </div>
 
         <div class="pricing-card">
-            <h2>Empresario</h2>
+            <h2><?= const_0163 ?></h2>
             <div class="price"><?= $dolar3 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>2 Núcleos x 3.0 Ghz</li>
+                <li><?= const_0165 ?></li>
                 <li>Disco HDD 720 GB</li>
                 <li>RAM 12 GB</li>
-                <li>Ancho Banda 500 MBP/s</li>
-                <li>Localización: Data-Center Canadá</li>
-                <li>WINDOWS 2016 R2</li>
-                <li>Mitigación DDOS hasta 2GBs</li>
-                <li>Hasta 300 PJs ON sin lag</li>
+                <li><?= const_0174 ?></li>
+                <li><?= const_0169 ?></li>
+                <li><?= const_0170 ?></li>
+                <li><?= const_0177 ?></li>
+                <li><?= const_0178 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?= $dolar3 ?>">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar3 ?>"><?= const_0137 ?></button> </div>
     </div>
 <?php require_once 'view/layouts/footers.php'; ?>

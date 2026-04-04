@@ -121,56 +121,56 @@
             font-weight: bold;
         }
     </style>
-    <h1 class="h1">Crear una web a medida nunca fue tan facil.</h1>
+    <h1 class="h1"><?= const_0138 ?></h1>
 
 <div class="padm">
-    <p>Toda la web hecha, todo a medida. responsiva. segura y anti inyeciones.</p>
+    <p><?= const_0139 ?></p>
 </br>
-     Compra el desarrollo de tu web personalizada para tu servidor de Shaiya. Nuestro equipo de expertos se encargará de crear una plataforma única y atractiva que refleje la esencia de tu servidor. Con características personalizadas, diseño a medida y funcionalidades específicas, tu web será el punto de encuentro perfecto para tu comunidad de jugadores. Desde la gestión de cuentas hasta la integración de eventos, nuestro servicio te brindará una experiencia completa y profesional. ¡Haz que tu servidor destaque con una web diseñada exclusivamente para ti!
+    <?= const_0140 ?>
 </div>
     <div class="pricing-container">
         <div class="pricing-card">
-            <h2>Web Shaiya basica</h2>
+            <h2><?= const_0141 ?></h2>
             <div class="price">225 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <h3>Carasteristicas Utiles</h3>
-                <li>Registro de usuarios</li>
-                <li>porcentajes de faccion</li>
-                <li>Anti inyecion SQL server y MYSQL</li>
-                <li>PayPal Recarga Manual</li>
-                <li>Status Server</li>
-                <li>Rank PVP</li>
-                <li>Rank GBR</li>
+                <h3><?= const_0143 ?></h3>
+                <li><?= const_0144 ?></li>
+                <li><?= const_0145 ?></li>
+                <li><?= const_0146 ?></li>
+                <li><?= const_0147 ?></li>
+                <li><?= const_0148 ?></li>
+                <li><?= const_0149 ?></li>
+                <li><?= const_0150 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="740">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="740"><?= const_0137 ?></button> 
         </div>
         <div class="pricing-card">
-            <h2>Web Shaiya Pro</h2>
+            <h2><?= const_0142 ?></h2>
             <div class="price">350 USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <h3>Carasteristicas Utiles</h3>
-                <li>Registro de usuarios</li>
-                <li>porcentajes de faccion</li>
-                <li>Oro o Items en server</li>
-                <li>Anti inyecion SQL server y MYSQL</li>
-                <li>Pasarelas de PAGOS internacionales</li>
-                <li>PayPal Automatizado</li>
-                <li>Status Server</li>
-                <li>Rank PVP</li>
-                <li>Rank GBR</li>
-                <li class="subtitle">Desde Panel Usuario Pueden:</li>
-                <li>Cobrar Escalas de premios</li>
-                <li>Cobrar Ruletas de premios</li>
-                <li>Revivir Personajes</li>
-                <li>Ver sus propias estaditicas de personaje</li>
+                <h3><?= const_0143 ?></h3>
+                <li><?= const_0144 ?></li>
+                <li><?= const_0145 ?></li>
+                <li><?= const_0151 ?></li>
+                <li><?= const_0146 ?></li>
+                <li><?= const_0152 ?></li>
+                <li><?= const_0153 ?></li>
+                <li><?= const_0148 ?></li>
+                <li><?= const_0149 ?></li>
+                <li><?= const_0150 ?></li>
+                <li class="subtitle"><?= const_0154 ?></li>
+                <li><?= const_0155 ?></li>
+                <li><?= const_0156 ?></li>
+                <li><?= const_0157 ?></li>
+                <li><?= const_0158 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="740">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="740"><?= const_0137 ?></button> 
         </div>
 
 

@@ -116,58 +116,58 @@ $dolar3 = str_replace('.00', '', $dolar3);
             background: #fafafa;
         }
     </style>
-    <h1 class="h1">Tu elijes la velocidad y nosotros te la damos.</h1>
+    <h1 class="h1"><?= const_0198 ?></h1>
     <div class="pricing-container">
         <div class="pricing-card">
-            <h2>Servidor dedicado Basico</h2>
+            <h2><?= const_0199 ?></h2>
             <div class="price"><?=  $dolar1 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Memoria: hasta 576 GB</li>
-                <li>Discos de almacenamiento SSD NVMe y HDD SAS Soft RAID</li>
-                <li>SLA: 99,95%</li>
-                <li>AB público: de 3 Gb/s a 5 Gb/s(1)</li>
-                <li>AB privado: de 5 Gb/s</li>
+                <li><?= const_0200 ?></li>
+                <li><?= const_0201 ?></li>
+                <li><?= const_0202 ?></li>
+                <li><?= const_0203 ?></li>
+                <li><?= const_0204 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar1 ?>">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar1 ?>"><?= const_0137 ?></button> 
         </div>
 
         <div class="pricing-card">
-            <h2>Servidor dedicado Emprendedor</h2>
+            <h2><?= const_0205 ?></h2>
             <div class="price"><?=  $dolar2 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Memoria: hasta 1,5 TB</li>
-                <li>SLA: 99,99%</li>
-                <li>Ancho de banda público garantizado desde 5 Gb/s hasta 25 Gb/s(1)</li>
-                <li>Ancho de banda privado de 25 Gb/s incluido</li>
-                <li>OVHcloud Link Aggregation</li>
-                <li>Compatible con 3-AZ en París</li>
+                <li><?= const_0206 ?></li>
+                <li><?= const_0207 ?></li>
+                <li><?= const_0208 ?></li>
+                <li><?= const_0209 ?></li>
+                <li><?= const_0210 ?></li>
+                <li><?= const_0211 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar2 ?>">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar2 ?>"><?= const_0137 ?></button> 
         </div>
 
         <div class="pricing-card">
-            <h2>Servidor Empresario Master Full</h2>
+            <h2><?= const_0212 ?></h2>
             <div class="price"><?=  $dolar3 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
-                <li>Memoria: hasta 2 TB</li>
-                <li>SLA: 99,99 %</li>
-                <li>Doble fuente de alimentación</li>
-                <li>Discos «hot swap»</li>
-                <li>AB público: de 10 Gb/s a 25 Gb/s(1)</li>
-                <li>OVHcloud Link Aggregation</li>
-                <li>25 Gb/s de ancho de banda privado incluido y garantizado</li>
-                <li>Compatible con 3-AZ en París</li>
+                <li><?= const_0213 ?></li>
+                <li><?= const_0214 ?></li>
+                <li><?= const_0215 ?></li>
+                <li><?= const_0216 ?></li>
+                <li><?= const_0217 ?></li>
+                <li><?= const_0210 ?></li>
+                <li><?= const_0218 ?></li>
+                <li><?= const_0211 ?></li>
             </ul>
             <div class="terms-checkbox">
-                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
+                <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos"><?= const_0136 ?></a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar3 ?>">Pagar Ahora</button> 
+            <button class="btn-pay" name="pagar ahora" value="<?=  $dolar3 ?>"><?= const_0137 ?></button> 
         </div>
 
     </div>

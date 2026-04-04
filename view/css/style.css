@@ -840,3 +840,6 @@ footer {
         font-size: 1.3em;
     }
 }
+    li {
+        content: "✅ ";
+    }

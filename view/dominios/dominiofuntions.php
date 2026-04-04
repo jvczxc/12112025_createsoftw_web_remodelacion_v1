@@ -32,11 +32,11 @@
 
         echo "<div class='result " . (!$has_ip && !$is_reachable ? "available" : "taken") . "'>";
         if (!$has_ip && !$is_reachable) {
-            echo "✅ <strong>$fullsld</strong> parece estar <strong>DISPONIBLE</strong>";
+            echo "✅ <strong>$fullsld</strong> " . const_0267;
         } else {
-            echo "❌ <strong>$fullsld</strong> ya está <strong>REGISTRADO</strong>";
+            echo "❌ <strong>$fullsld</strong> " . const_0268;
         }
         echo "</div>";
-        echo "<p class='info'>Nota: La precisión depende de la respuesta de los servidores DNS globales.</p>";
+        echo "<p class='info'>" . const_0269 . "</p>";
     }
     ?>

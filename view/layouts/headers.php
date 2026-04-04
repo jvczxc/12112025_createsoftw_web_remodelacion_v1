@@ -226,6 +226,6 @@ $_SESSION['loader'] = "OFF";
                     <li class="backbuton"><a href="http://clientes.createsoftw.com" class="auth-link" target="_blank"><font color='#B11F19'><?= const_0095 ?></font></a></li>
                 </ul>
                 
-                <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+                <button class="menu-toggle" aria-label="<?= const_0261 ?>"><i class="fas fa-bars"></i></button>
             </nav>
         </header>

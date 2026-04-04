@@ -33,22 +33,22 @@
         </footer>
 
         <div class="floating-buttons">
-            <button id="chat-button" title="Chat Interno"><i class="fas fa-comment"></i></button>
+            <button id="chat-button" title="<?= const_0266 ?>"><i class="fas fa-comment"></i></button>
             <a href="https://wa.me/584169256098" target="_blank" id="whatsapp-button" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <button id="scroll-to-top" title="Subir al inicio"><i class="fas fa-arrow-up"></i></button>
+            <button id="scroll-to-top" title="<?= const_0265 ?>"><i class="fas fa-arrow-up"></i></button>
         </div>
 
         <div id="chat-modal" class="chat-modal">
             <div class="chat-content">
                 <div class="chat-header">
-                    <h4>Chat con Createsoftw</h4>
+                    <h4><?= const_0263 ?></h4>
                     <button class="close-chat">&times;</button>
                 </div>
                 <div class="chat-body">
-                    <div class="message received">Hola, soy Juan. ¿En qué puedo servirle?</div>
+                    <div class="message received"><?= const_0262 ?></div>
                     </div>
                 <div class="chat-footer">
-                    <input type="text" id="visitor-message" placeholder="Escribe tu mensaje...">
+                    <input type="text" id="visitor-message" placeholder="<?= const_0264 ?>">
                     <button id="send-message"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>

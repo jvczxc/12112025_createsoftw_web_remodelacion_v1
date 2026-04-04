@@ -110,7 +110,7 @@
             margin-top: 50px;
         }
     </style>
-    <h1 class="h1">Elije tu Dominio, y dale rienda suelta a tu emprendimiento. ¡Y hazlo realidad!</h1>
-    <h1 class="h1">Elije  tu identidad en internet y haz que miren tu sitio en internet.</h1>
+    <h1 class="h1"><?= const_0222 ?></h1>
+    <h1 class="h1"><?= const_0220 ?></h1>
     <?php require_once 'view/dominios/solo.php'; ?>
 <?php require_once 'view/layouts/footers.php'; ?>
