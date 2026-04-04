@@ -69,7 +69,7 @@ $_SESSION['loader'] = "OFF";
                                     <li><a href="index.php?w=webshaiya&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0032 ?></a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-submenu">
+                            <!-- <li class="dropdown-submenu">
                                 <a href="#"><?= const_0058 ?> <i class="fas fa-caret-down"></i></a>
                                 <ul class="dropdown-menu-submenu">
                                     <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0026a ?></a></li>
@@ -80,7 +80,7 @@ $_SESSION['loader'] = "OFF";
                                     <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0030 ?></a></li>
                                     <li><a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>" class="dropdown-item"><?= const_0031 ?></a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="dropdown-submenu">
                                 <a href="#"><?= const_0003 ?> <i class="fas fa-caret-down"></i></a>
                                 <ul class="dropdown-menu-submenu">

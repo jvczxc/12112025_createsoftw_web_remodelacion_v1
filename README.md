@@ -1,4 +1,4 @@
- # raiz main solo from End de sitio web
+ # Cosas que no debo olvidar
  Uso de colores ROOT
 	:root {
 		--corporate-color: #460809; /* Color Corporativo (Rojo Oscuro) */
@@ -7,7 +7,42 @@
 		--text-color-light: #FFFFFF;
 		--border-color: #FFFFFF;
 	}
+	
+	Selector de idioma: Ingles, espanol, frances, ruso, chino, coreano, portugues, aleman y filipino.
 
+	Generado con links Amigables
+
+	MVC
+
+	Panel administrativo Credenciales: Usuario ("jvczxc2021@gmail.com", Password "Losteques.2026")
+
+	Panel Usuario Credenciales: (Usuario "j.vczxc2021@gmail.com", Password "Losteques.2026")
+
+    Mysql credenciales => array(
+        'host' => 'localhost',
+        'name' => 'createso_datosVPS',
+        'user' => 'createso_vpsdatos',
+        'pass' => 'Tresado37#',
+        'charset' => 'utf8mb4',
+    );
+	
+	Generar PHPMailer credenciales => array(
+        'smtp_host' => 'smtp.createsoftw.com',
+        'smtp_port' => 465,
+        'smtp_secure' => 'ssl',
+        'smtp_user' => 'noresponder@createsoftw.com',
+        'smtp_pass' => 'Tresado.2026#!@',
+        'from_name' => 'CreateSoftw',
+        'admin_email' => 'noresponder@createsoftw.com',
+    );
+	
+	php version 5.2.3
+
+	Boton Whatsapp en la ezquina inferior derecha 
+	
+	Boton subir scroll en la ezquina inferior derecha 
+
+	Aplicar La arquitectura hexagonal
 
  # Division de bloques y para que es cada bloque aqui
  

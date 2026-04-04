@@ -1,4 +1,13 @@
-<?php require_once 'view/layouts/headers.php'; ?>
+<?php 
+require_once 'view/layouts/headers.php'; 
+/* Filtrar quitado el "." y los 2 ceros */
+$dolar1 = $dato3[0]['price'];
+$dolar2 = $dato3[1]['price'];
+$dolar3 = $dato3[2]['price'];
+$dolar1 = str_replace('.00', '', $dolar1);
+$dolar2 = str_replace('.00', '', $dolar2);
+$dolar3 = str_replace('.00', '', $dolar3);
+?>
 <style>
         :root {
             --corporate-color: #460809; /* [cite: 1, 15] */
@@ -111,7 +120,7 @@
     <div class="pricing-container">
         <div class="pricing-card">
             <h2>Básico</h2>
-            <div class="price">25 USD<font class="fontprice">/m</font></div>
+            <div class="price"><?= $dolar1 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Panel básico</li>
                 <li>Server Pre-instalado listo para editar y testear</li>
@@ -133,11 +142,11 @@
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="25">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar1 ?>">Pagar Ahora</button> </div>
 
         <div class="pricing-card">
             <h2>Emprendedor</h2>
-            <div class="price">60 USD<font class="fontprice">/m</font></div>
+            <div class="price"><?= $dolar2 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Panel básico + Staff GS y GMs</li>
                 <li>Server Pre-instalado listo para editar</li>
@@ -162,11 +171,11 @@
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="60">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar2 ?>">Pagar Ahora</button> </div>
 
         <div class="pricing-card">
             <h2>Empresario</h2>
-            <div class="price">80 USD<font class="fontprice">/m</font></div>
+            <div class="price"><?= $dolar3 ?> USD<font class="fontprice">/m</font></div>
             <ul class="services-list">
                 <li>Panel básico + Staff GS y GMs</li>
                 <li>Server Pre-instalado listo</li>
@@ -194,6 +203,6 @@
             <div class="terms-checkbox">
                 <input type="checkbox" id="check2"> <label for="check2"><a href="index.php?w=tyc&i=<?php echo $_SESSION['i']; ?>" class="textos">Acepto los Términos</a></label>
             </div>
-            <button class="btn-pay" name="pagar ahora" value="80">Pagar Ahora</button> </div>
+            <button class="btn-pay" name="pagar ahora" value="<?= $dolar3 ?>">Pagar Ahora</button> </div>
     </div>
-<?php require_once 'view/layouts/footers.php'; ?>
+<?php require_once 'view/layouts/footers.php';?>
