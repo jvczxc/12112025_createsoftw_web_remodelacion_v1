@@ -9,13 +9,6 @@
 	}
 
 
- # 12112025 remodelacion web Maqueteando index.php finalizado
-
-	 * Lenguaje(Idioma paises) ira en asset/inc/bloque00
-	 * Modelo de negocio ira dentro de asset/inc/bloque##
-	 * Conexiones Mysqli y Email ira dentro de asset/inc/requerido
-		 
-	 
  # Division de bloques y para que es cada bloque aqui
  
  # PROYECTOS BY CREATESOFTW
@@ -28,12 +21,17 @@
 	6- Desarrollar web TOP INMUEBLES
 	7- Desarrollar web ALQUILERES DE BARCOS Y VEHICULOS
 	8- Desarrollar web Shaiya Edition (2010 Clasic)
- # Pasos a seguir en createsoftw
 
-	(P) - Conectar con API para ver dominios libres (Brayan Stiven)
-
- # Mapeo de sitio web
-
-	1- API de dominios estara en URL "/assets/bloque00/factura.php"
-	2- Facturas estara en URL "/assets/bloque01/factura.php"
 	
+# Tareas Pendientes
+	1- que la web pueda cambiar los textos desde el panel Admin
+	2- que la web pueda cambiar los precios desde el panel Admin
+	3- Que la migracion de dominio lleve a una pasarela de pagos
+	4- Inidicar diferentes metodos de pago en la web
+	5- Que cada Boton de pagar ahora lleve a el preformulario de pagos cn su boton pagar ahora
+	6- para que el cliente realize los pagos debe iniciar session
+	7- Agregar SO en VPS y SERVIDOR DEDICADO
+	8- Agregar Cursos Online
+	9- Vincular Panel Admin como sub dominio
+	10- Agregar Estaditicas en la parte administrativa
+	11- Pasar de idiomas
