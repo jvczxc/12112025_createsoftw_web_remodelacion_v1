@@ -122,7 +122,6 @@ define("const_0118","Indirizzo: [Caracas, Venezuela]");
 define("const_0119","Lavora con noi");
 define("const_0120","Tutti i diritti riservati.");
 define("const_0121","Sviluppo di siti web, videogiochi, corsi e altro ancora visitateci");
-/* Fin Index Footter y Header */
 define("const_0122","Prenota il tuo dominio + hosting per soli $ 45 USD");
 define("const_0123","Se possiedi già il dominio, scegli l'hosting più adatto a te e pubblica il tuo sito web.");
 define("const_0124","basico");

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= const_0021 ?></title>
+    <title><?= const_title ?></title>
     <link rel="icon" href="view/img/logo/logo.png" type="image/png">
     <link rel="stylesheet" href="view/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -97,7 +97,7 @@ $_SESSION['loader'] = "OFF";
                    
 
                     <li class="dropdown">
-                        <a href="index.php?w=construcion&i=<?php echo $_SESSION['i']; ?>"><?php echo $_SESSION['i']; ?> <i class="fa fa-globe"></i> <i class="fas fa-caret-down"></i></a>
+                        <a href="#"><?php echo $_SESSION['i']; ?> <i class="fa fa-globe"></i> <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                     <?php
                         $index = basename($_SERVER['PHP_SELF']);

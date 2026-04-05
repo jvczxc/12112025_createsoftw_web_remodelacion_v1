@@ -122,7 +122,6 @@ define("const_0118","地址：【委内瑞拉加拉加斯】");
 define("const_0119","与我们合作");
 define("const_0120","版权所有。");
 define("const_0121","网站开发、视频游戏、课程等请访问我们");
-/* Fin Index Footter y Header */
 define("const_0122","只需 45 美元即可预订您的域名 + 托管");
 define("const_0123","如果您已经拥有域名，请选择适合您的托管并发布您的网站。");
 define("const_0124","基本的");

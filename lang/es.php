@@ -19,7 +19,7 @@ define("const_0017",".io");
 define("const_0018",".dev");
 define("const_0019","Servicios destacados");
 define("const_0020","Trabaja con Nosotros");
-define("const_0021","Createsoftw - Desarrollo de webs, video juegos, cursos y mas visitanos");
+define("const_0021","¿Necesitas una APP o Pagina web?</br>Createsoftw - Desarrollo de webs, video juegos, cursos y mas visitanos");
 define("const_0022","Cargando web...");
 define("const_0023","VPS pre-armado");
 define("const_0024","SERVER DEDICADO");
@@ -430,4 +430,11 @@ define("const_0426","Registro");
 define("const_0427","Recuperar contrasena");
 define("const_0428","Donacion");
 define("const_0429","status server");
+
+define("const_0430","Captcha Mal colocada.");
+define("const_0431","Campo de Nombre es Obligatorio");
+define("const_0432","Campo de Email es Obligatorio");
+define("const_0433","Campo de Mensaje es Obligatorio");
+define("const_0434","Ha ocurrido un error enviando correo electr&oacute;nico intente mas tarde.");
+define("const_0435","Gracias por contactarnos. <br/>	Le enviaremos respuesta a el email que coloco en el formulario.<br/> En un plazo no mayor a 24 Horas.");
 

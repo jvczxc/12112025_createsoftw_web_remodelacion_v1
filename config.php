@@ -16,6 +16,7 @@ if(isset($_GET['i'])){
 IF(empty($_SESSION['loader'])){
     $_SESSION['loader'] = "ON";
 }
+define('const_title', 'CREATESOFTW-Los duros en desarrollo web, video juegos, cursos y mas');
 define('captcha_public', '6LeEDoEsAAAAALnXJrnPiegcSXVDzZ3q8XtJXekc');
 define('captcha_secret', '6LeEDoEsAAAAAGSrs6ePvE8kb-7IMgZKmGXscjvK');
 /* Aqui definimos las URL todas de la web url_cons_1 hasta url_cons_100 */

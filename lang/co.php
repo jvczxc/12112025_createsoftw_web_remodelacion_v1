@@ -122,7 +122,6 @@ define("const_0118","주소: [베네수엘라 카라카스]");
 define("const_0119","우리와 함께 일하세요");
 define("const_0120","모든 권리 보유.");
 define("const_0121","웹사이트 개발, 비디오 게임, 강좌 등이 우리를 방문합니다.");
-/* Fin Index Footter y Header */
 define("const_0122","단 $45 USD로 도메인 + 호스팅 예약");
 define("const_0123","이미 도메인이 있는 경우 적합한 호스팅을 선택하고 웹사이트를 게시하세요.");
 define("const_0124","기초적인");
