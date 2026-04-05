@@ -13,7 +13,7 @@ define("const_0011","Réservez votre domaine + hébergement pour seulement 90 $ 
 define("const_0012","Entrez le nom de domaine souhaité");
 define("const_0013","Rechercher un domaine");
 define("const_0014",".com");
-define("const_0015",".filet");
+define("const_0015",".net");
 define("const_0016",".org");
 define("const_0017",".io");
 define("const_0018",".dev");

@@ -13,7 +13,7 @@ define("const_0011","Prenota il tuo dominio + hosting per soli $ 90 USD");
 define("const_0012","Inserisci il nome di dominio che desideri");
 define("const_0013","Cerca dominio");
 define("const_0014",".com");
-define("const_0015",".netto");
+define("const_0015",".net");
 define("const_0016",".org");
 define("const_0017",".io");
 define("const_0018",".dev");

@@ -13,7 +13,7 @@ define("const_0011","Зарезервируйте свой домен + хост
 define("const_0012","Введите желаемое доменное имя");
 define("const_0013","Поиск домена");
 define("const_0014",".com");
-define("const_0015",".сеть");
+define("const_0015",".net");
 define("const_0016",".org");
 define("const_0017",".io");
 define("const_0018",".dev");

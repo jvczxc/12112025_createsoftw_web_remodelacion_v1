@@ -13,7 +13,7 @@ define("const_0011","단 $90 USD에 도메인 + 호스팅 예약");
 define("const_0012","원하는 도메인 이름을 입력하세요");
 define("const_0013","도메인 검색");
 define("const_0014",".com");
-define("const_0015",".그물");
+define("const_0015",".net");
 define("const_0016",".org");
 define("const_0017",".io");
 define("const_0018",".dev");
