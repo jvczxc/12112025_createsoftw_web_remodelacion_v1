@@ -5,7 +5,7 @@ class Modelo{
     private $datos;
     public function __construct(){
         $this->Modelo = array();
-        $this->db = new PDO('mysql:host=localhost;dbname=createso_datosvps;charset=utf8', 'createso_vpsdatos', 'Tresado37#');
+        $this->db = new PDO('mysql:host=localhost;dbname=createso_datosVPS;charset=utf8', 'createso_vpsdatos', 'Tresado37#');
     }
     public function insertar($tabla, $data){
         //print_r($data);
